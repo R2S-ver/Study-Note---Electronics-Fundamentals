@@ -12,8 +12,8 @@ The images used in this repository are for educational and self-study purposes o
 
 **Table of Contents**
 - [Electrical safety/电气安全](Electrical-safety)
-- [Voltage and current/电压和电流](Voltage and current)
-- [Basic electrical components/基础电子元器件]()
+- [Voltage and current/电压和电流](Voltage-and-current)
+- [Basic electrical components/基础电子元器件](Basic-electrical-components)
 ----------------------------
 ## Electrical safety
 
