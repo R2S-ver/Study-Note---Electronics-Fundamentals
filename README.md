@@ -9,3 +9,10 @@ The images used in this repository are for educational and self-study purposes o
 目前，本仓库的内容专注于**纯硬件基础**和**模拟电子技术**，暂未涉及单片机（如 Arduino）或数字逻辑编程。我希望通过记录这些底层逻辑，打下扎实的硬件基础。
 
 本图库中使用的图片仅供教育和自学用途。如果您是此处使用的任何图片的版权所有者，并希望将其删除，请与我联系。
+
+**Table of Contents**
+[Electrical safety](Electrical-safety)
+Voltage and current
+Basic electrical components
+----------------------------
+## Electrical safety
