@@ -1,7 +1,7 @@
 <div align="center">
 
 # Personal studylogbook of electronic fundamentals
-[English]()[中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
+[English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md)[中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
 
 
 Welcome to my learning repository! 
