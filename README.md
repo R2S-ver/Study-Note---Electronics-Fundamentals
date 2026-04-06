@@ -1,6 +1,8 @@
 <div align="center">
-[中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
 
+  <div>
+  [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
+  </div>
 
 Welcome to my learning repository! 
 This project documents my self-study journey in the world of electricity and hardware. I am starting from the very basics of electrical safety and slowly diving into component-level circuit design. 
