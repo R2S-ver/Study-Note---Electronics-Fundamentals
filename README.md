@@ -29,3 +29,8 @@ Description
 ## Basic electrical components
 sss
 stest
+
+## References
+1
+2
+3
