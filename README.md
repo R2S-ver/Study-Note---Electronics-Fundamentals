@@ -1,6 +1,6 @@
 <div align="center">
 
-
+# Personal studylogbook of electronic fundamentals
 ## [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
 
 
