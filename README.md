@@ -1,11 +1,3 @@
-Welcome to my learning repository! 
-This project documents my self-study journey in the world of electricity and hardware. I am starting from the very basics of electrical safety and slowly diving into component-level circuit design. 
-Currently, this repository focuses on **hardware fundamentals** and **analog electronics**, without involving microcontrollers (like Arduino) or digital logic programming yet.
-
-To better internalize these concepts and understand their practical applications, I have included real-world examples and case studies for each component. This "theory + application" approach helps me review more effectively and bridges the gap between textbook knowledge and actual engineering practice.
-
-The images used in this repository are for educational and self-study purposes only. If you are the copyright owner of any image used here and would like it removed, please contact me.
-
 
 
 欢迎来到我的学习仓库！这里记录了我自学电气基础和硬件知识的整个过程。我的学习路线是从最基础的电气安全和物理特性开始，逐步深入到元件级别的电路原理。
