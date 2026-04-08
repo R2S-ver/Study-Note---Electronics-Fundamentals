@@ -29,7 +29,7 @@ To better internalize these concepts and understand their practical applications
 > **⚠️ Note on Regional Standards:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms, and safety regulations (like NEN 1010) vary significantly by country. Please be aware of your local regulations when working with electricity.
 
 ### 1. Introduction & Project Scope
-<img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner.png" width="256" height="256" />
+<img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner.png" width="256" height="256" /> <br>
 This section focuses on electrical safety at home, specifically in my personal workspace (my room) and the equipment used within it. 
 **Goals of this study:**
 - Systematically map the power distribution structure and usage patterns.
