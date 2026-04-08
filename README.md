@@ -31,6 +31,24 @@ This section focuses on electrical safety at home, specifically in my personal w
 - Identify the main energy-consuming devices.
 - Design safe, reliable, and feasible solutions for energy savings.
 
+### 2. Protective Mechanisms in the Household Electrical System
+In Dutch homes, the distribution board (groepenkast) is located in the meter cupboard. The structure must comply with the **NEN 1010** safety regulations. 
+The power enters through the grid connection and passes through the following main safety components:
+
+* **Main Fuse & Main Switch (Hoofdschakelaar):** For total system shutdown.
+* **Residual Current Device (Aardlekschakelaar - 30mA):** Protects against electrocution by detecting leakage currents.
+* **Circuit Breakers (Installatieautomaten - typically 16A per group):** Distributes the installation into groups. Heavy consumers (like induction cooktops) get a separate 1-phase or 3-phase group with higher capacity and dedicated protection.
+* **Grounding (Aarding):** Provides a safe path for fault currents.
+
+#### Circuit Breakers: 1P vs. 2P (Isolation)
+* **1P Breaker:** Interrupts the circuit, but the appliance remains connected to the grid via the neutral wire (N).
+* **2P / 1P+N Breaker:** Interrupts **both** conductors (Phase and Neutral). 
+* **Why is full isolation important?** With a 1P breaker, the neutral remains connected. In the event of a fault or incorrect wiring, the appliance could still carry voltage. A 2P breaker ensures complete electrical isolation and a safer shutdown.
+
+#### Trip Characteristics (Uitschakelkarakteristieken)
+Circuit breakers protect against overload and short circuits by automatically switching off. The trip characteristic determines how fast the breaker reacts to a current spike (e.g., when turning on a device).
+* Common types: **B, C, D, K, Z, and MA**.
+* The difference lies in the current value at which the breaker trips magnetically, expressed as a multiple of the nominal current (In). (e.g., C-curves are better for devices with higher inrush currents).
 
 
 
