@@ -55,6 +55,39 @@ Circuit breakers protect against overload and short circuits by automatically sw
 * Common types: **B, C, D, K, Z, and MA**.
 * The difference lies in the current value at which the breaker trips magnetically, expressed as a multiple of the nominal current (In). (e.g., C-curves are better for devices with higher inrush currents).
 
+### 3. Potential Risks in Household Power Usage
+
+#### A. Cable Sizing (Aderdikte)
+The diameter (cross-section) of a cable determines the maximum current it can safely carry. Thicker cables = lower resistance = higher current capacity.
+*Key factors influencing cable choice:*
+1.  **Material:** Copper, Aluminum, or CCA (Copper Clad Aluminum).
+2.  **Core type:** Solid vs. stranded wire (influences skin effect and contact surface).
+3.  **Length:** Longer cables have higher resistance and voltage drop.
+4.  **Ambient Temperature:** Heat is harder to dissipate in high temperatures.
+5.  **Cable Density:** Number of cables packed together in a conduit (heat buildup).
+6.  **Short-circuit Current:** Ability to withstand heat during a short circuit.
+
+#### B. Cord Defects (Snoer defecten)
+A damaged cable can lead to short circuits, electric shocks, or fire.
+* Damage to the outer jacket.
+* Color changes due to overheating.
+* Excessive bending or pinching.
+* Aging/brittle insulation material.
+
+#### C. Operating Environment (Gebruiksomgeving)
+Extra caution is required in damp or wet environments.
+* Is the device properly grounded?
+* Does the IP rating meet the standard for the area?
+* Is an RCD present?
+* Location of the appliance and potential corrosion of contact points.
+
+#### D. Overload, Overvoltage, and Short Circuits
+* **Simultaneous Use:** Running multiple high-wattage devices on one group (max. 10A/16A).
+* **Long-term Heavy Load:** Leads to overheating of cables.
+* **Daisy-Chaining:** Plugging power strips into other power strips (major overload risk).
+* **Poor Contacts:** High contact resistance causes heat.
+* **Limited Heat Dissipation:** Especially dangerous when using coiled cable reels (always unroll them completely to prevent overheating).
+* **Lack of Surge Protection:** Vulnerability to voltage spikes (Overspanningsbeveiliging).
 </details> <!-- 结束折叠内容 -->
 
 
