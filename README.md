@@ -113,7 +113,7 @@ The core objective of this project is to understand electrical topology mapping 
 **4.8. Direct Connection** Secondary power strips should be eliminated. Critical equipment, such as PCs and monitors, must be plugged directly into wall sockets. Heavy tools like the compressor should be grouped onto their own dedicated circuit. <br>
 **4.9. Prevention & Warning Labels** Safety signage will be applied to the workspace. This includes prohibitions on simultaneously starting multiple heavy machines (to prevent overload) and a ban on using coiled extension cords (to prevent induction-based heat buildup). <br>
 <img alt="13" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/13.png" width="768" height="768" /> <br>
-<img alt="14" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/14.png" width="768" height="768" /> <br>
+<img alt="14" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/14.png" width="512" height="512" /> <br>
 #### Conclusion
 The result of this research is the identification of nine critical risk factors, ranging from missing grounds on heavy machinery to fire hazards caused by 'daisy-chaining'.
 This analysis has led to a concrete optimization plan to transform the workshop into a safe, professional environment. The research proves that the current installation is not equipped for the simultaneous use of industrial tools and sensitive electronics. Moving from a serial 'tree structure' to a parallel 'star topology' and separating circuits are essential steps to guarantee fire safety and operational stability.
