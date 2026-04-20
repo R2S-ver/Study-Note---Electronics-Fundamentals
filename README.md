@@ -30,7 +30,7 @@ To better internalize these concepts and understand their practical applications
 
 ### 1. Introduction & Project Scope
 <img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" width="512" height="512" /> <br>
-This section focuses on electrical safety at home, specifically in my personal workspace (my room) and the equipment used within it. </div>
+This section focuses on electrical safety at home, specifically in my personal workspace (my room) and the equipment used within it. <br>
 **Goals of this study:**
 - Systematically map the power distribution structure and usage patterns.
 - Identify potential safety risks.
