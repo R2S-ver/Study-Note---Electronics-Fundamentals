@@ -61,31 +61,31 @@ Circuit breakers protect against overload and short circuits by automatically sw
 <img alt="5" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/5.png" width="512" height="512" /> <br>
 Hard VS Stranded wire(Different application scenario's)  <br>
 <img alt="6" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/6.png" width="512" height="512" /> <br>
-#### 1. Cable Sizing (Cross sectional area in mm^2)
+#### 3.1. Cable Sizing (Cross sectional area in mm^2)
 The diameter (cross-section) of a cable determines the maximum current it can safely carry. Thicker cables = lower resistance = higher current capacity.
 *Key factors influencing cable choice:*
-1.1.  **Material:** Copper, Aluminum, or CCA (Copper Clad Aluminum).
-1.2.  **Core type:** Solid vs. stranded wire (influences skin effect and contact surface).
-1.3.  **Length:** Longer cables have higher resistance and voltage drop.
-1.4.  **Ambient Temperature:** Heat is harder to dissipate in high temperatures.
-1.5.  **Cable Density:** Number of cables packed together in a conduit (heat buildup).
-1.6.  **Short-circuit Current:** Ability to withstand heat during a short circuit.
+3.1.1.  **Material:** Copper, Aluminum, or CCA (Copper Clad Aluminum).
+3.1.2.  **Core type:** Solid vs. stranded wire (influences skin effect and contact surface).
+3.1.3.  **Length:** Longer cables have higher resistance and voltage drop.
+3.1.4.  **Ambient Temperature:** Heat is harder to dissipate in high temperatures.
+3.1.5.  **Cable Density:** Number of cables packed together in a conduit (heat buildup).
+3.1.6.  **Short-circuit Current:** Ability to withstand heat during a short circuit.
 <img alt="7" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/7.png" width="512" height="512" /> <br>
-#### 2. Cord Defects
+#### 3.2. Cord Defects
 A damaged cable can lead to short circuits, electric shocks, or fire.
 * Damage to the outer jacket.
 * Color changes due to overheating.
 * Excessive bending or pinching.
 * Aging/brittle insulation material.
 
-#### 3. Operating Environment
+#### 3.3. Operating Environment
 Extra caution is required in damp or wet environments.
 * Is the device properly grounded?
 * Does the IP rating meet the standard for the area?
 * Is an RCD present?
 * Location of the appliance and potential corrosion of contact points.
 
-#### 4. Overload, Overvoltage and Short Circuits
+#### 3.4. Overload, Overvoltage and Short Circuits
 * **Simultaneous Use:** Running multiple high-wattage devices on one group (max. 10A/16A).
 * **Long-term Heavy Load:** Leads to overheating of cables.
 * **Daisy-Chaining:** Plugging power strips into other power strips (major overload risk).
