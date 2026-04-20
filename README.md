@@ -62,14 +62,14 @@ Circuit breakers protect against overload and short circuits by automatically sw
 Hard VS Stranded wire(Different application scenario's)  <br>
 <img alt="6" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/6.png" width="512" height="512" /> <br>
 #### 3.1. Cable Sizing (Cross sectional area in mm^2)
-The diameter (cross-section) of a cable determines the maximum current it can safely carry. Thicker cables = lower resistance = higher current capacity.
-*Key factors influencing cable choice:*
-3.1.1.  **Material:** Copper, Aluminum, or CCA (Copper Clad Aluminum).
-3.1.2.  **Core type:** Solid vs. stranded wire (influences skin effect and contact surface).
-3.1.3.  **Length:** Longer cables have higher resistance and voltage drop.
-3.1.4.  **Ambient Temperature:** Heat is harder to dissipate in high temperatures.
-3.1.5.  **Cable Density:** Number of cables packed together in a conduit (heat buildup).
-3.1.6.  **Short-circuit Current:** Ability to withstand heat during a short circuit.
+The diameter (cross-section) of a cable determines the maximum current it can safely carry. Thicker cables = lower resistance = higher current capacity.<br>
+*Key factors influencing cable choice:*<br>
+3.1.1.  **Material:** Copper, Aluminum, or CCA (Copper Clad Aluminum).<br>
+3.1.2.  **Core type:** Solid vs. stranded wire (influences skin effect and contact surface).<br>
+3.1.3.  **Length:** Longer cables have higher resistance and voltage drop.<br>
+3.1.4.  **Ambient Temperature:** Heat is harder to dissipate in high temperatures.<br>
+3.1.5.  **Cable Density:** Number of cables packed together in a conduit (heat buildup).<br>
+3.1.6.  **Short-circuit Current:** Ability to withstand heat during a short circuit.<br>
 <img alt="7" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/7.png" width="512" height="512" /> <br>
 #### 3.2. Cord Defects
 A damaged cable can lead to short circuits, electric shocks, or fire.
