@@ -125,6 +125,7 @@ Analyzing the installation and formulating concrete improvements has significant
 To mitigate the risks identified in my research, I have implemented a physical separation of equipment to minimize interference and balance the electrical load: <br>
 * **Office Zone:** All sensitive electronic devices, including my PC and monitors, are now consolidated in a dedicated office area(bedroom). This zone is isolated from heavy-duty machinery to prevent hardware damage caused by Electromagnetic Interference (EMI) and voltage dips. <br>
 * **Work Zone:** Industrial equipment and processing powertools have been moved to a separate room. By isolating the heavy power loads (such as the welding machine and air compressor) from the delicate electronics; significantly reducing the risk of circuit overloads and improved the overall stability of the infrastructure. <br>
+[Back to the Table of Contents](#Table-of-Contents)
 ### References
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
@@ -139,7 +140,6 @@ To mitigate the risks identified in my research, I have implemented a physical s
 11. https://mens-en-gezondheid.infonu.nl/leven/166505-veilig-elektriciteitsgebruik-en-eerste-hulp-bij-elektrocutie.html
 12. https://www.livios.be/nl/artikel/63803/elektriciteit-in-de-badkamer-wat-kan-en-wat-niet/
 13. https://www.vanlieshoutelektra.nl/nieuws/zo-voorkomt-u-overbelasting-op-tijdelijke-installaties/
-[Back to the Table of Contents](#Table-of-Contents)
 </details> <!-- 结束折叠内容 -->
 
 ----------------------------
