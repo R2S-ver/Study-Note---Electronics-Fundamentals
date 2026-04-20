@@ -121,9 +121,9 @@ This analysis has led to a concrete optimization plan to transform the workshop 
 Analyzing the installation and formulating concrete improvements has significantly increased my awareness of electrical safety. I have become much more alert to how equipment is used in my daily environment. This research has not only provided me with technical skills but also fostered a critical, observant attitude toward potential risks within the physical infrastructure of my work place. <br>
 <img alt="16" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/16.png" width="512" height="512" /> <br>
 #### Optimization
-To mitigate the risks identified in my research, I have implemented a physical separation of equipment to minimize interference and balance the electrical load:
-**Office Zone:** All sensitive electronic devices, including my PC and monitors, are now consolidated in a dedicated office area(bedroom). This zone is isolated from heavy-duty machinery to prevent hardware damage caused by Electromagnetic Interference (EMI) and voltage dips.
-**Workshop Zone:** Industrial equipment and processing powertools have been moved to a separate room. By isolating the heavy power loads (such as the welder and compressor) from the delicate electronics; significantly reducing the risk of circuit overloads and improved the overall stability of the infrastructure.
+To mitigate the risks identified in my research, I have implemented a physical separation of equipment to minimize interference and balance the electrical load: <br>
+**Office Zone:** All sensitive electronic devices, including my PC and monitors, are now consolidated in a dedicated office area(bedroom). This zone is isolated from heavy-duty machinery to prevent hardware damage caused by Electromagnetic Interference (EMI) and voltage dips. <br>
+**Workshop Zone:** Industrial equipment and processing powertools have been moved to a separate room. By isolating the heavy power loads (such as the welder and compressor) from the delicate electronics; significantly reducing the risk of circuit overloads and improved the overall stability of the infrastructure. <br>
 ### References
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
