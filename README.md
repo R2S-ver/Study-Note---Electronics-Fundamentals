@@ -85,7 +85,7 @@ Extra caution is required in damp or wet environments.
 * Is an RCD present?
 * Location of the appliance and potential corrosion of contact points.
 
-#### 4. Overload, Overvoltage, and Short Circuits
+#### 4. Overload, Overvoltage and Short Circuits
 * **Simultaneous Use:** Running multiple high-wattage devices on one group (max. 10A/16A).
 * **Long-term Heavy Load:** Leads to overheating of cables.
 * **Daisy-Chaining:** Plugging power strips into other power strips (major overload risk).
@@ -95,6 +95,26 @@ Extra caution is required in damp or wet environments.
 
 ### Practical reseach
 <img alt="8" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/8.png" width="1024" height="1024" /> <br>
+During this sprint, I'm doing a research into the electrical infrastructure of my workplace, focusing on safety and operational reliability. 
+Based on this analysis, I made a detailed topology schema of the workspace.
+The core objective of this project is to understand electrical topology mapping and perform risk assessments. To ensure clarity—especially since many specialized tools lack standardized electrical symbols; I use icons to improve recognizability.
+#### Potential risks and Optimization Plan
+<img alt="9" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/9.png" width="512" height="512" /> <br>
+1. Welding Machine Grounding The welding machine is currently ungrounded. This poses a significant safety risk and must be connected directly to the main grounding system of the distribution board (meterkast).
+2. Inrush Current (Current Peaks) The inrush current of the welding machine is too high (20-30A) for the current circuit. The device needs to be moved to a different group/circuit equipped with a heavier-duty circuit breaker and adequate overload protection.
+3. Trip Characteristics For the welding equipment, a circuit breaker with a C or D-curve characteristic should be used. These are specifically designed to handle high starting currents and peak loads without tripping prematurely.
+<img alt="10" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/10.png" width="512" height="512" /> <br>
+4. Eliminating Daisy-Chaining Connecting power strips in series (daisy-chaining) increases contact resistance, leading to heat buildup and fire hazards. The setup must be converted from a "tree structure" to a star topology. Furthermore, a high-quality 16A power strip with an extra-long lead should be used instead of multiple interconnected strips.
+5. Voltage Dips & EMI Heavy consumers, such as the compressor and angle grinder, cause voltage dips and Electromagnetic Interference (EMI). This disrupts sensitive electronics like PCs and monitors. The solution is to place heavy machinery on a separate circuit or physically disconnect sensitive electronics during heavy work.
+<img alt="11" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/11.png" width="512" height="512" /> <br>
+6. Travel Adapters The contact surfaces of travel adapters are often too small for high-current applications. To improve safety, current plugs should be replaced with standard European plugs or industrial-grade power strips with high load capacities.
+7. Zoning & Circuit Distribution The workshop will be divided into a "Machining Zone" and an "Office Zone," each connected to separate circuits (e.g., 16A per group). Where possible, wiring should be upgraded from 2.5mm² to 4mm² or 6mm². Additionally, an RCD (Residual Current Device) should be installed, and consumer-grade power strips replaced with professional PDUs (Power Distribution Units).
+<img alt="12" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/12.png" width="512" height="512" /> <br>
+8. Direct Connection Secondary power strips should be eliminated. Critical equipment, such as PCs and monitors, must be plugged directly into wall sockets. Heavy tools like the compressor should be grouped onto their own dedicated circuit.
+9. Prevention & Warning Labels Safety signage will be applied to the workspace. This includes prohibitions on simultaneously starting multiple heavy machines (to prevent overload) and a ban on using coiled extension cords (to prevent induction-based heat buildup).
+#### Conclusion
+The primary result of this research is the identification of nine critical risk factors, ranging from missing grounds on heavy machinery to fire hazards caused by 'daisy-chaining'.
+This analysis has led to a concrete optimization plan to transform the workshop into a safe, professional environment. The research proves that the current installation is not equipped for the simultaneous use of industrial tools and sensitive electronics. Moving from a serial 'tree structure' to a parallel 'star topology' and separating circuits are essential steps to guarantee fire safety and operational stability.
 ### References
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
