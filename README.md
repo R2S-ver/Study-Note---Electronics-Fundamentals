@@ -67,7 +67,7 @@ Circuit breakers protect against overload and short circuits by automatically sw
 <img alt="3" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/3.png" width="512" height="512" /> <br>
     </details>
     <details><summary>
-### 🟦3. Potential Risks in Household Power Usage
+### 🟦3. Potential Risks in Household Power Usage🟦
 </summary>
 
 <img alt="5" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/5.png" width="512" height="512" /> <br>
@@ -106,7 +106,7 @@ Extra caution is required in damp or wet environments.
 * **Lack of Surge Protection:** Vulnerability to voltage spikes (Overspanningsbeveiliging).
     </details>
     <details><summary>
-### 🟦4. Practical research
+### 🟦4. Practical research🟦
 </summary>
 
 <img alt="8" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/8.png" width="1024" height="1024" /> <br>
