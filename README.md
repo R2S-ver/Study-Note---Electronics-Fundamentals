@@ -113,7 +113,7 @@ Extra caution is required in damp or wet environments.
 During this research, I'm doing a research into the electrical infrastructure of my workplace, focusing on safety and operational reliability. 
 Based on this analysis, I made a detailed topology schema of the workspace.
 The core objective of this project is to understand electrical topology mapping and perform risk assessments. To ensure clarity—especially since many specialized tools lack standardized electrical symbols; I use icons to improve recognizability.
-#### Potential risks and Optimization Plan
+#### 🟩Potential risks and Optimization Plan
 <img alt="9" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/9.png" width="768" height="768" /> <br>
 **4.1. Welding Machine Grounding** The welding machine is currently ungrounded. This poses a significant safety risk and must be connected directly to the main grounding system of the distribution board (meterkast).<br>
 **4.2. Inrush Current (Current Peaks)** The inrush current of the welding machine is too high (20-30A) for the current circuit. The device needs to be moved to a different group/circuit equipped with a heavier-duty circuit breaker and adequate overload protection.<br>
@@ -169,10 +169,9 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 
 <!-- 开始折叠内容 -->
-## Voltage and Current
+## 🟪Voltage and Current
 <details> 
 <summary> Click here to expand </summary> 
-
 
 </details> 
 
@@ -186,26 +185,48 @@ To mitigate the risks identified in my research, I have implemented a physical s
 <!-- 开始折叠内容 -->
 <details open><summary>
   
-## Basic electrical components
+## 🟪Basic electrical components
 </summary>
+
+
       <details><summary>
         
-### Resistor
+### 🟦Resistor
 </summary>
         content 1.1
     </details>
     <details><summary>
       
-### Conductor
+### 🟦Conductor
 </summary>
         content 1.2
     </details>
     <details><summary>
       
-### Capacitor
+### 🟦Capacitor
 </summary>
         content 1.2
     </details>
+     <details><summary>
+        
+### 🟦Diode
+</summary>
+        content 1.1
+    </details>
+     <details><summary>
+        
+### 🟦Transistor
+</summary>
+        content 1.1
+    </details>
+     <details><summary>
+        
+### 🟦Mosfet
+</summary>
+        content 1.1
+    </details>
+
+
 </details>
 
 #### [>Back to the Table of Contents<](#Table-of-Contents)
