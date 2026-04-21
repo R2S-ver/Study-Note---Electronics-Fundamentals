@@ -13,6 +13,9 @@ Currently, this repository focuses on **hardware fundamentals** and **analog ele
 To better internalize these concepts and understand their practical applications, I have included real-world examples and case studies for each component. This "theory + application" approach helps me review more effectively and bridges the gap between textbook knowledge and actual engineering practice.
 
 *The images used in this repository are for educational and self-study purposes only. If you are the copyright owner of any image used here and would like it removed, please contact me.*
+
+> **⚠️ Note on Regional Standards:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your local regulations when working with electricity.
+
 </div>
 
 # **Table of Contents**
@@ -24,8 +27,6 @@ To better internalize these concepts and understand their practical applications
 <!-- 开始折叠内容 -->
 ## Electrical safety
 <details><summary>Electrical safety</summary>
-  
-> **⚠️ Note on Regional Standards:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your local regulations when working with electricity.
     <details><summary>Intro</summary>
 ### 1. Introduction & Project Scope
 <img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" width="512" height="512" /> <br>
