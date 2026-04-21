@@ -1,4 +1,4 @@
-<div align="center">
+<img width="453" height="105" alt="image" src="https://github.com/user-attachments/assets/ba8e2075-88f6-472a-87ee-015b8a1b1e3e" /><div align="center">
   
 <img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner.png" width="256" height="256" />
   
@@ -26,6 +26,15 @@ To better internalize these concepts and understand their practical applications
   4\. Practical research <br>
 - [Voltage and current](#voltage-and-current)
 - [Basic electrical components](#basic-electrical-components)
+  1. Resistor
+    1.1 Voltage dropping
+    1.2 Voltage comparator
+  2. Conductor
+  3. Capacitor
+  6. Diode
+    Rectifier bridge
+  8. Transistor
+  9. Mosfet
 ----------------------------
 
 <!-- 开始折叠内容 -->
