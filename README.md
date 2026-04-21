@@ -24,18 +24,18 @@ To better internalize these concepts and understand their practical applications
   2\. Protective Mechanisms in the Household Electrical System <br>
   3\. Potential Risks in Household Power Usage <br>
   4\. Practical research <br>
-- [Voltage and current](#voltage-and-current)
-  1. Kirchhoff’s Current and Voltage Law
-- [Basic electrical components](#basic-electrical-components)
-  1. Resistor
-    1.1 Voltage dropping
-    1.2 Voltage comparator
-  2. Conductor
-  3. Capacitor
-  6. Diode
-    Rectifier bridge
-  8. Transistor
-  9. Mosfet
+- [Voltage and current](#voltage-and-current) <br>
+  1. Kirchhoff’s Current and Voltage Law <br>
+- [Basic electrical components](#basic-electrical-components) <br>
+  1\. Resistor <br>
+    1.1\. Voltage dropping <br>
+    1.2\. Voltage comparator <br>
+  2\. Conductor <br>
+  3\. Capacitor <br>
+  6\. Diode <br>
+    Rectifier bridge <br>
+  8\. Transistor <br>
+  9\. Mosfet <br>
 ----------------------------
 
 <!-- 开始折叠内容 -->
