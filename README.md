@@ -129,8 +129,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 * **Office Zone:** All sensitive electronic devices, including my PC and monitors, are now consolidated in a dedicated office area(bedroom). This zone is isolated from heavy-duty machinery to prevent hardware damage caused by Electromagnetic Interference (EMI) and voltage dips. <br>
 * **Work Zone:** Industrial equipment and processing powertools have been moved to a separate room. By isolating the heavy power loads (such as the welding machine and air compressor) from the delicate electronics; significantly reducing the risk of circuit overloads and improved the overall stability of the infrastructure. <br>
     </details>
-
-      <details><summary>References</summary>
+    <details><summary>References</summary>
 ### References
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
