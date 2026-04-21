@@ -27,11 +27,11 @@ To better internalize these concepts and understand their practical applications
 <!-- 开始折叠内容 -->
 <details open><summary>
   
-## Electrical safety🟪
+## 🟪Electrical safety
 </summary>
     <details><summary>
       
-### 1. Introduction & Project Scope🟦
+### 🟦1. Introduction & Project Scope
 </summary>
 <img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" width="512" height="512" /> <br>
 This section focuses on electrical safety at home, specifically in my personal workspace (my bedroom) and the equipment used within it. <br>
@@ -43,7 +43,7 @@ This section focuses on electrical safety at home, specifically in my personal w
 - Design safe, reliable, and feasible solutions for energy savings.
     </details>
     <details><summary>
-### 2. Protective Mechanisms in the Household Electrical System🟦
+### 🟦2. Protective Mechanisms in the Household Electrical System
 </summary>
 
 In Dutch homes, the distribution board (groepenkast) is located in the meter cupboard. The structure must comply with the **NEN 1010** safety regulations. 
