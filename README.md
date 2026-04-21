@@ -23,11 +23,11 @@ To better internalize these concepts and understand their practical applications
 
 <!-- 开始折叠内容 -->
 ## Electrical safety
-<details><summary>Click here to expand</summary>
+<details><summary>*Click here to expand*</summary>
   
 > **⚠️ Note on Regional Standards:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your local regulations when working with electricity.
 
-    <details><summary>Resistor</summary>
+    <details><summary>Intro</summary>
 ### 1. Introduction & Project Scope
 <img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" width="512" height="512" /> <br>
 This section focuses on electrical safety at home, specifically in my personal workspace (my bedroom) and the equipment used within it. <br>
@@ -37,7 +37,7 @@ This section focuses on electrical safety at home, specifically in my personal w
 - Identify the main energy-consuming devices.
 - Design safe, reliable, and feasible solutions for energy savings.
     </details>
-      <details><summary>Resistor</summary>
+      <details><summary>Protective Mechanisms in the Household Electrical System</summary>
 ### 2. Protective Mechanisms in the Household Electrical System
 In Dutch homes, the distribution board (groepenkast) is located in the meter cupboard. The structure must comply with the **NEN 1010** safety regulations. 
 The power enters through the grid connection and passes through the following main safety components:
