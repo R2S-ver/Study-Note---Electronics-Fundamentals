@@ -25,7 +25,7 @@ To better internalize these concepts and understand their practical applications
 ----------------------------
 
 <!-- 开始折叠内容 -->
-<details><summary open>
+<details open><summary>
   
 ## Electrical safety
 </summary>
