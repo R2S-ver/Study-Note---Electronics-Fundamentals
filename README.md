@@ -23,7 +23,7 @@ To better internalize these concepts and understand their practical applications
 
 <!-- 开始折叠内容 -->
 ## Electrical safety
-<details><summary>*Click here to expand*</summary>
+<details><summary>Click here to expand</summary>
   
 > **⚠️ Note on Regional Standards:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your local regulations when working with electricity.
 
@@ -37,7 +37,7 @@ This section focuses on electrical safety at home, specifically in my personal w
 - Identify the main energy-consuming devices.
 - Design safe, reliable, and feasible solutions for energy savings.
     </details>
-      <details><summary>Protective Mechanisms in the Household Electrical System</summary>
+    <details><summary>Protective Mechanisms in the Household Electrical System</summary>
 ### 2. Protective Mechanisms in the Household Electrical System
 In Dutch homes, the distribution board (groepenkast) is located in the meter cupboard. The structure must comply with the **NEN 1010** safety regulations. 
 The power enters through the grid connection and passes through the following main safety components:
@@ -59,8 +59,7 @@ Circuit breakers protect against overload and short circuits by automatically sw
 * The difference lies in the current value at which the breaker trips magnetically, expressed as a multiple of the nominal current (In). (e.g., C-curves are better for devices with higher inrush currents). <br>
 <img alt="3" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/3.png" width="512" height="512" /> <br>
     </details>
-
-      <details><summary>Resistor</summary>
+    <details><summary>Potential Risks in Household Power Usage</summary>
 ### 3. Potential Risks in Household Power Usage
 <img alt="5" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/5.png" width="512" height="512" /> <br>
 Hard VS Stranded wire(Different application scenario's)  <br>
@@ -98,7 +97,7 @@ Extra caution is required in damp or wet environments.
 * **Lack of Surge Protection:** Vulnerability to voltage spikes (Overspanningsbeveiliging).
     </details>
 
-      <details><summary>Resistor</summary>
+      <details><summary>Practical research</summary>
 ### 4. Practical research
 <img alt="8" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/8.png" width="1024" height="1024" /> <br>
 During this research, I'm doing a research into the electrical infrastructure of my workplace, focusing on safety and operational reliability. 
@@ -134,7 +133,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
     </details>
 ### [>Back to the Table of Contents<](#Table-of-Contents)
 
-      <details><summary>Resistor</summary>
+      <details><summary>References</summary>
 ### References
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
@@ -150,7 +149,8 @@ To mitigate the risks identified in my research, I have implemented a physical s
 12. https://www.livios.be/nl/artikel/63803/elektriciteit-in-de-badkamer-wat-kan-en-wat-niet/
 13. https://www.vanlieshoutelektra.nl/nieuws/zo-voorkomt-u-overbelasting-op-tijdelijke-installaties/
     </details>
-</details> <!-- 结束折叠内容 -->
+</details> 
+<!-- 结束折叠内容 -->
 
 ----------------------------
 
