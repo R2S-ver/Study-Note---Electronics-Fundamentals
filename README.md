@@ -1,5 +1,3 @@
-<img width="453" height="105" alt="image" src="https://github.com/user-attachments/assets/ba8e2075-88f6-472a-87ee-015b8a1b1e3e" /><div align="center">
-  
 <img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner.png" width="256" height="256" />
   
 # Personal studylogbook of electronic fundamentals
