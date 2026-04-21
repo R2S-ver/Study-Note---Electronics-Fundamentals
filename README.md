@@ -159,8 +159,6 @@ To mitigate the risks identified in my research, I have implemented a physical s
 11. https://mens-en-gezondheid.infonu.nl/leven/166505-veilig-elektriciteitsgebruik-en-eerste-hulp-bij-elektrocutie.html
 12. https://www.livios.be/nl/artikel/63803/elektriciteit-in-de-badkamer-wat-kan-en-wat-niet/
 13. https://www.vanlieshoutelektra.nl/nieuws/zo-voorkomt-u-overbelasting-op-tijdelijke-installaties/
-
-
     </details>
 </details> 
 
@@ -177,25 +175,40 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 
 </details> 
+
+#### [>Back to the Table of Contents<](#Table-of-Contents)
 <!-- 结束折叠内容 -->
 
 ----------------------------
 
-## Basic electrical components
+
 
 <!-- 开始折叠内容 -->
-<details><summary>head 1</summary>
-      <details><summary>Resistor</summary>
+<details><summary>
+  
+## Basic electrical components
+</summary>
+      <details><summary>
+        
+### Resistor
+</summary>
         content 1.1
     </details>
-    <details><summary>Conductor</summary>
+    <details><summary>
+      
+### Conductor
+</summary>
         content 1.2
     </details>
-    <details><summary>Capacitor</summary>
+    <details><summary>
+      
+### Capacitor
+</summary>
         content 1.2
     </details>
 </details>
 
+#### [>Back to the Table of Contents<](#Table-of-Contents)
 <!-- 结束折叠内容 -->
 
 
