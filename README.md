@@ -55,12 +55,12 @@ The power enters through the grid connection and passes through the following ma
 * **Grounding:** Provides a safe path for fault currents.
 
 <img alt="2" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/2.png" width="512" height="512" /> <br>
-#### 🟩Circuit Breakers: 1P vs. 2P
+#### 🟩Circuit Breakers: 1P vs. 2P🟩
 * **1P Breaker:** Interrupts the circuit, but the appliance remains connected to the grid via the neutral wire (N).
 * **2P / 1P+N Breaker:** Interrupts **both** conductors (Phase and Neutral). 
 * **Why is full isolation important?** With a 1P breaker, the neutral remains connected. In the event of a fault or incorrect wiring, the appliance could still carry voltage. A 2P breaker ensures complete electrical isolation and a safer shutdown.
 <img alt="4" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/4.png" width="512" height="512" /> <br>
-#### 🟩Trip Characteristics
+#### 🟩Trip Characteristics🟩
 Circuit breakers protect against overload and short circuits by automatically switching off. The trip characteristic determines how fast the breaker reacts to a current spike (e.g., when turning on a device).
 * Common types: **B, C, D, K, Z, and MA**.
 * The difference lies in the current value at which the breaker trips magnetically, expressed as a multiple of the nominal current (In). (e.g., C-curves are better for devices with higher inrush currents). <br>
@@ -73,7 +73,7 @@ Circuit breakers protect against overload and short circuits by automatically sw
 <img alt="5" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/5.png" width="512" height="512" /> <br>
 Hard VS Stranded wire(Different application scenario's)  <br>
 <img alt="6" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/6.png" width="512" height="512" /> <br>
-#### 🟩3.1. Cable Sizing (Cross sectional area in mm^2)
+#### 🟩3.1. Cable Sizing (Cross sectional area in mm^2)🟩
 The diameter (cross-section) of a cable determines the maximum current it can safely carry. Thicker cables = lower resistance = higher current capacity.<br>
 *Key factors influencing cable choice:*<br>
 3.1.1.  **Material:** Copper, Aluminum, or CCA (Copper Clad Aluminum).<br>
@@ -83,21 +83,21 @@ The diameter (cross-section) of a cable determines the maximum current it can sa
 3.1.5.  **Cable Density:** Number of cables packed together in a conduit (heat buildup).<br>
 3.1.6.  **Short-circuit Current:** Ability to withstand heat during a short circuit.<br>
 <img alt="7" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/7.png" width="512" height="512" /> <br>
-#### 🟩3.2. Cord Defects
+#### 🟩3.2. Cord Defects🟩
 A damaged cable can lead to short circuits, electric shocks, or fire.
 * Damage to the outer jacket.
 * Color changes due to overheating.
 * Excessive bending or pinching.
 * Aging/brittle insulation material.
 
-#### 🟩3.3. Operating Environment
+#### 🟩3.3. Operating Environment🟩
 Extra caution is required in damp or wet environments.
 * Is the device properly grounded?
 * Does the IP rating meet the standard for the area?
 * Is an RCD present?
 * Location of the appliance and potential corrosion of contact points.
 
-#### 🟩3.4. Overload, Overvoltage and Short Circuits
+#### 🟩3.4. Overload, Overvoltage and Short Circuits🟩
 * **Simultaneous Use:** Running multiple high-wattage devices on one group (max. 10A/16A).
 * **Long-term Heavy Load:** Leads to overheating of cables.
 * **Daisy-Chaining:** Plugging power strips into other power strips (major overload risk).
@@ -113,7 +113,7 @@ Extra caution is required in damp or wet environments.
 During this research, I'm doing a research into the electrical infrastructure of my workplace, focusing on safety and operational reliability. 
 Based on this analysis, I made a detailed topology schema of the workspace.
 The core objective of this project is to understand electrical topology mapping and perform risk assessments. To ensure clarity—especially since many specialized tools lack standardized electrical symbols; I use icons to improve recognizability.
-#### 🟩Potential risks and Optimization Plan
+#### 🟩Potential risks and Optimization Plan🟩
 <img alt="9" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/9.png" width="768" height="768" /> <br>
 **4.1. Welding Machine Grounding** The welding machine is currently ungrounded. This poses a significant safety risk and must be connected directly to the main grounding system of the distribution board (meterkast).<br>
 **4.2. Inrush Current (Current Peaks)** The inrush current of the welding machine is too high (20-30A) for the current circuit. The device needs to be moved to a different group/circuit equipped with a heavier-duty circuit breaker and adequate overload protection.<br>
@@ -129,21 +129,21 @@ The core objective of this project is to understand electrical topology mapping 
 **4.9. Prevention & Warning Labels** Safety signage will be applied to the workspace. This includes prohibitions on simultaneously starting multiple heavy machines (to prevent overload) and a ban on using coiled extension cords (to prevent induction-based heat buildup). <br>
 <img alt="13" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/13.png" width="768" height="768" /> <br>
 <img alt="14" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/14.png" width="512" height="512" /> <br>
-#### 🟩Conclusion
+#### 🟩Conclusion🟩
 The result of this research is the identification of nine critical risk factors, ranging from missing grounds on heavy machinery to fire hazards caused by 'daisy-chaining'.
 This analysis has led to a concrete optimization plan to transform the workshop into a safe, professional environment. The research proves that the current installation is not equipped for the simultaneous use of industrial tools and sensitive electronics. Moving from a serial 'tree structure' to a parallel 'star topology' and separating circuits are essential steps to guarantee fire safety and operational stability.
-#### 🟩Reflection
+#### 🟩Reflection🟩
 Analyzing the installation and formulating concrete improvements has significantly increased my awareness of electrical safety. I have become much more alert to how equipment is used in my daily environment. This research has not only provided me with technical skills but also fostered a critical, observant attitude toward potential risks within the physical infrastructure of my work place. <br>
 <img alt="16" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/16.png" width="768" height="768" /> <br>
 ↑New Work Zone <br>
-#### 🟩Optimization
+#### 🟩Optimization🟩
 To mitigate the risks identified in my research, I have implemented a physical separation of equipment to minimize interference and balance the electrical load: <br>
 * **Office Zone:** All sensitive electronic devices, including my PC and monitors, are now consolidated in a dedicated office area(bedroom). This zone is isolated from heavy-duty machinery to prevent hardware damage caused by Electromagnetic Interference (EMI) and voltage dips. <br>
 * **Work Zone:** Industrial equipment and processing powertools have been moved to a separate room. By isolating the heavy power loads (such as the welding machine and air compressor) from the delicate electronics; significantly reducing the risk of circuit overloads and improved the overall stability of the infrastructure. <br>
 #### [>Back to the Table of Contents<](#Table-of-Contents)
     </details>
     <details><summary>
-### 🟦References
+### 🟦References🟦
 </summary>
 
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
@@ -169,7 +169,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 
 <!-- 开始折叠内容 -->
-## 🟪Voltage and Current
+## 🟪Voltage and Current🟪
 <details> 
 <summary> Click here to expand </summary> 
 
@@ -185,43 +185,43 @@ To mitigate the risks identified in my research, I have implemented a physical s
 <!-- 开始折叠内容 -->
 <details open><summary>
   
-## 🟪Basic electrical components
+## 🟪Basic electrical components🟪
 </summary>
 
 
       <details><summary>
         
-### 🟦Resistor
+### 🟦Resistor🟦
 </summary>
         content 1.1
     </details>
     <details><summary>
       
-### 🟦Conductor
+### 🟦Conductor🟦
 </summary>
         content 1.2
     </details>
     <details><summary>
       
-### 🟦Capacitor
+### 🟦Capacitor🟦
 </summary>
         content 1.2
     </details>
      <details><summary>
         
-### 🟦Diode
+### 🟦Diode🟦
 </summary>
         content 1.1
     </details>
      <details><summary>
         
-### 🟦Transistor
+### 🟦Transistor🟦
 </summary>
         content 1.1
     </details>
      <details><summary>
         
-### 🟦Mosfet
+### 🟦Mosfet🟦
 </summary>
         content 1.1
     </details>
