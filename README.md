@@ -45,6 +45,7 @@ This section focuses on electrical safety at home, specifically in my personal w
     
 ### 2. Protective Mechanisms in the Household Electrical System
 </summary>
+
 In Dutch homes, the distribution board (groepenkast) is located in the meter cupboard. The structure must comply with the **NEN 1010** safety regulations. 
 The power enters through the grid connection and passes through the following main safety components:
 
@@ -65,8 +66,10 @@ Circuit breakers protect against overload and short circuits by automatically sw
 * The difference lies in the current value at which the breaker trips magnetically, expressed as a multiple of the nominal current (In). (e.g., C-curves are better for devices with higher inrush currents). <br>
 <img alt="3" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/3.png" width="512" height="512" /> <br>
     </details>
-    <details><summary>3. Potential Risks in Household Power Usage</summary>
+    <details><summary>
 ### 3. Potential Risks in Household Power Usage
+</summary>
+
 <img alt="5" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/5.png" width="512" height="512" /> <br>
 Hard VS Stranded wire(Different application scenario's)  <br>
 <img alt="6" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/6.png" width="512" height="512" /> <br>
@@ -102,8 +105,10 @@ Extra caution is required in damp or wet environments.
 * **Limited Heat Dissipation:** Especially dangerous when using coiled cable reels (always unroll them completely to prevent overheating).
 * **Lack of Surge Protection:** Vulnerability to voltage spikes (Overspanningsbeveiliging).
     </details>
-    <details><summary>4. Practical research</summary>
+    <details><summary>
 ### 4. Practical research
+</summary>
+
 <img alt="8" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/8.png" width="1024" height="1024" /> <br>
 During this research, I'm doing a research into the electrical infrastructure of my workplace, focusing on safety and operational reliability. 
 Based on this analysis, I made a detailed topology schema of the workspace.
@@ -136,8 +141,10 @@ To mitigate the risks identified in my research, I have implemented a physical s
 * **Office Zone:** All sensitive electronic devices, including my PC and monitors, are now consolidated in a dedicated office area(bedroom). This zone is isolated from heavy-duty machinery to prevent hardware damage caused by Electromagnetic Interference (EMI) and voltage dips. <br>
 * **Work Zone:** Industrial equipment and processing powertools have been moved to a separate room. By isolating the heavy power loads (such as the welding machine and air compressor) from the delicate electronics; significantly reducing the risk of circuit overloads and improved the overall stability of the infrastructure. <br>
     </details>
-    <details><summary>References</summary>
+    <details><summary>
 ### References
+</summary>
+
 1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
 3. https://texasgateway.org/resource/68-electrical-safety-systems-and-devices
