@@ -20,10 +20,10 @@ To better internalize these concepts and understand their practical applications
 
 # **Table of Contents**
 - [Electrical safety at home](#electrical-safety)
-- 1. Introduction & Project Scope
-- 2. Protective Mechanisms in the Household Electrical System
-- 3. Potential Risks in Household Power Usage
-- 4. Practical research
+  - 1. Introduction & Project Scope
+  - 2. Protective Mechanisms in the Household Electrical System
+  - 3. Potential Risks in Household Power Usage
+  - 4. Practical research
 - [Voltage and current](#voltage-and-current)
 - [Basic electrical components](#basic-electrical-components)
 ----------------------------
