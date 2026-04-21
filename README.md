@@ -25,6 +25,7 @@ To better internalize these concepts and understand their practical applications
   3\. Potential Risks in Household Power Usage <br>
   4\. Practical research <br>
 - [Voltage and current](#voltage-and-current)
+  1. Kirchhoff’s Current and Voltage Law
 - [Basic electrical components](#basic-electrical-components)
   1. Resistor
     1.1 Voltage dropping
