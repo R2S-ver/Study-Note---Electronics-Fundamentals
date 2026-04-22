@@ -31,12 +31,12 @@ To better internalize these concepts and understand their practical applications
   1\. [Resistor](#resistor) <br>
      &nbsp;&nbsp; 1.1\. Voltage Dropping <br>
      &nbsp;&nbsp; 1.2\. Voltage Comparator <br>
-  2\. [Conductor](Conductor) <br>
-  3\. [Capacitor](Capacitor) <br>
+  2\. [Conductor](#conductor) <br>
+  3\. [Capacitor](#capacitor) <br>
      &nbsp;&nbsp; 3.1\. Low-pass and High-pass Filter <br>
-  4\. [Diode <br>
+  4\. [Diode](#diode) <br>
      &nbsp;&nbsp; 4.1\. Rectifier Bridge <br>
-  5\. [Transistor]() <br>
+  5\. [Transistor](#Transistor) <br>
   6\. [Mosfet]() <br>
   7\. [Linear and Switching Power Supply]() <br>
      &nbsp;&nbsp; 7.1\. SMPS analysis <br>
