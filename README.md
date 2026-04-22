@@ -160,7 +160,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 ### 🟦References
 </summary>
 
-1. https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/
+1. [](https://saelektroexperts.nl/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/)
 2. https://www.drixes-elektricien.nl/groepenkast/overzicht
 3. https://texasgateway.org/resource/68-electrical-safety-systems-and-devices
 4. https://www.mall99.co.ke/types-of-electrical-wires-and-cables/
@@ -254,7 +254,7 @@ sss
 stest
 
 ### References
-1. https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7
-2. https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator
-3. https://www.circuitbasics.com/pull-up-and-pull-down-resistors/
-4. https://www.ti.com/product/LM393#features
+1. [Led weerstand calculator](https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7)
+2. [Resistor Heat Calculator](https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator)
+3. [Pull-up and Pull-down Resistors](https://www.circuitbasics.com/pull-up-and-pull-down-resistors/)
+4. [Voltage comparator LM393 data sheet | TI.com](https://www.ti.com/product/LM393#features)
