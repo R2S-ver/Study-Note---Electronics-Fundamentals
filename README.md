@@ -20,10 +20,10 @@ To better internalize these concepts and understand their practical applications
 
 # **Table of Contents**
 - [Electrical safety at home](#electrical-safety) <br>
-  1\. Introduction & Project Scope <br>
-  2\. Protective Mechanisms in the Household Electrical System <br>
-  3\. Potential Risks in Household Power Usage <br>
-  4\. Practical Research <br>
+  1\. [Introduction & Project Scope](#introduction-&-project-scope) <br>
+  2\. [Protective Mechanisms in the Household Electrical System](#protective-mechanisms-in-the-household-electrical-system) <br>
+  3\. [Potential Risks in Household Power Usage](#potential-risks-in-household-power-usage) <br>
+  4\. [Practical Research](#practical-research) <br>
   5\. [References](#refs-electrical) <br>
 - [Voltage and current](#voltage-and-current) <br>
   1\. Kirchhoff’s Current and Voltage Law <br>
