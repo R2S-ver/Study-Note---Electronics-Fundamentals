@@ -28,17 +28,17 @@ To better internalize these concepts and understand their practical applications
 - [Voltage and current](#voltage-and-current) <br>
   1\. Kirchhoff’s Current and Voltage Law <br>
 - [Basic electrical components](#basic-electrical-components) <br>
-  1\. [Resistor](#resistor) <br>
+  1\. [Resistor](#Resistor) <br>
      &nbsp;&nbsp; 1.1\. Voltage Dropping <br>
      &nbsp;&nbsp; 1.2\. Voltage Comparator <br>
-  2\. [Conductor](#conductor) <br>
-  3\. [Capacitor](#capacitor) <br>
+  2\. [Conductor](#Conductor) <br>
+  3\. [Capacitor](#Capacitor) <br>
      &nbsp;&nbsp; 3.1\. Low-pass and High-pass Filter <br>
-  4\. [Diode](#diode) <br>
+  4\. [Diode](#Diode) <br>
      &nbsp;&nbsp; 4.1\. Rectifier Bridge <br>
   5\. [Transistor](#Transistor) <br>
-  6\. [Mosfet]() <br>
-  7\. [Linear and Switching Power Supply]() <br>
+  6\. [Mosfet](#Mosfet) <br>
+  7\. [Linear and Switching Power Supply](#Linear and Switching Power Supply) <br>
      &nbsp;&nbsp; 7.1\. SMPS analysis <br>
   8\. References <br>
 ----------------------------
@@ -242,7 +242,12 @@ To mitigate the risks identified in my research, I have implemented a physical s
 </summary>
         content 1.1
     </details>
-
+     <details><summary>
+        
+### 🟦Linear and Switching Power Supply
+</summary>
+        content 1.1
+    </details>
 
 </details>
 
