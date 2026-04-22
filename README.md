@@ -162,7 +162,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 #### [>Back to the Table of Contents<](#Table-of-Contents)
 <details><summary>
   
-#### 🟦References
+### 🟦References
 </summary>
 
 1. [How does the connection of a meter box to the main fuse work?](https://saelektroexperts.nl/en/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/)
