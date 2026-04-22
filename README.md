@@ -258,3 +258,10 @@ stest
 2. [Resistor Heat Calculator](https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator)
 3. [Pull-up and Pull-down Resistors](https://www.circuitbasics.com/pull-up-and-pull-down-resistors/)
 4. [Voltage comparator LM393 data sheet | TI.com](https://www.ti.com/product/LM393#features)
+5. [How to Build a Voltage Comparator Circuit Using an LM393](https://www.learningaboutelectronics.com/Articles/LM393-voltage-comparator-circuit.php)
+6. [LC filter calculator](https://www.omnicalculator.com/physics/lc-filter)
+7. [Voltage and Current Explained](https://www.ariat-tech.com/blog/comprehensive-overview-of-voltage-and-current.html)
+8. [25 Types of Capacitors & their Uses (Explained in detail)](https://www.etechnophiles.com/types-of-capacitors/)
+9. [Linear Regulated Power Supply Block Diagram & Circuit Diagram](https://www.hackatronic.com/linear-regulated-power-supply-block-diagram-circuit-diagram/)
+10. [How to Build a Linear Power Supply](https://www.circuitbasics.com/linear-power-supplies/)
+11. 
