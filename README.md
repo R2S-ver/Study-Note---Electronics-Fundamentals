@@ -23,19 +23,24 @@ To better internalize these concepts and understand their practical applications
   1\. Introduction & Project Scope <br>
   2\. Protective Mechanisms in the Household Electrical System <br>
   3\. Potential Risks in Household Power Usage <br>
-  4\. Practical research <br>
+  4\. Practical Research <br>
+  5\. References <br>
 - [Voltage and current](#voltage-and-current) <br>
-  1. Kirchhoff’s Current and Voltage Law <br>
+  1\. Kirchhoff’s Current and Voltage Law <br>
 - [Basic electrical components](#basic-electrical-components) <br>
   1\. Resistor <br>
-    1.1\. Voltage dropping <br>
-    1.2\. Voltage comparator <br>
+    1.1\. Voltage Dropping <br>
+    1.2\. Voltage Comparator <br>
   2\. Conductor <br>
   3\. Capacitor <br>
-  6\. Diode <br>
-    Rectifier bridge <br>
-  8\. Transistor <br>
-  9\. Mosfet <br>
+    Low-pass and High-pass Filter <br>
+  4\. Diode <br>
+    Rectifier Bridge <br>
+  5\. Transistor <br>
+  6\. Mosfet <br>
+  7. Linear and Switching Power Supply <br>
+    7.1 SMPS analysis <br>
+  8\. References <br>
 ----------------------------
 
 <!-- 开始折叠内容 -->
