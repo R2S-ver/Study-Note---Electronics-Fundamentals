@@ -28,7 +28,7 @@ To better internalize these concepts and understand their practical applications
 - [Voltage and current](#voltage-and-current) <br>
   1\. Kirchhoff’s Current and Voltage Law <br>
 - [Basic electrical components](#basic-electrical-components) <br>
-  1\. Resistor <br>
+  1\. [Resistor](#resistor) <br>
      &nbsp;&nbsp; 1.1\. Voltage Dropping <br>
      &nbsp;&nbsp; 1.2\. Voltage Comparator <br>
   2\. Conductor <br>
