@@ -256,7 +256,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 <details><summary>
   
-### Refs Components
+### 🟦Refs Components
 </summary>
 
 1. [Led weerstand calculator](https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7)
