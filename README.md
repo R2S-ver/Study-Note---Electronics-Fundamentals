@@ -24,7 +24,7 @@ To better internalize these concepts and understand their practical applications
   2\. Protective Mechanisms in the Household Electrical System <br>
   3\. Potential Risks in Household Power Usage <br>
   4\. Practical Research <br>
-  5\. References <br>
+  5\. [References](#refs-electrical) <br>
 - [Voltage and current](#voltage-and-current) <br>
   1\. Kirchhoff’s Current and Voltage Law <br>
 - [Basic electrical components](#basic-electrical-components) <br>
@@ -40,7 +40,7 @@ To better internalize these concepts and understand their practical applications
   6\. [Mosfet](#Mosfet) <br>
   7\. [Linear and Switching Power Supply](#Linear-and-Switching-Power-Supply) <br>
      &nbsp;&nbsp; 7.1\. SMPS analysis <br>
-  8\. References <br>
+  8\. [References](#refs-components) <br>
 ----------------------------
 
 <!-- 开始折叠内容 -->
@@ -163,7 +163,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 </details>
 <details><summary>
   
-### 🟦5. References
+### 🟦5. Refs Electrical
 </summary>
 
 1. [How does the connection of a meter box to the main fuse work?](https://saelektroexperts.nl/en/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/)
@@ -264,7 +264,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 sss
 stest
 
-### References
+### Refs Components
 1. [Led weerstand calculator](https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7)
 2. [Resistor Heat Calculator](https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator)
 3. [Pull-up and Pull-down Resistors](https://www.circuitbasics.com/pull-up-and-pull-down-resistors/)
