@@ -252,7 +252,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 
 
-#### [>Back to the Table of Contents<](#Table-of-Contents)
+
 
 <details><summary>
   
@@ -279,5 +279,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 18. [Modular AC line EMI filters explained](https://passive-components.eu/modular-ac-line-emi-filters-explained/)
 19. [Bridge Rectifier With Capacitor Filter: Circuit Diagram and Explain Step by Step](https://www.voltagelab.com/bridge-rectifier-with-capacitor-filter/)
   </details>
+  
+  #### [>Back to the Table of Contents<](#Table-of-Contents)
 </details>
 <!-- 结束折叠内容 -->
