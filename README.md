@@ -254,6 +254,7 @@ sss
 stest
 
 ### References
-1
-2
-3
+1. https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7
+2. https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator
+3. https://www.circuitbasics.com/pull-up-and-pull-down-resistors/
+4. https://www.ti.com/product/LM393#features
