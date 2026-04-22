@@ -250,21 +250,15 @@ To mitigate the risks identified in my research, I have implemented a physical s
         content 1.1
     </details>
 
-</details>
+
 
 #### [>Back to the Table of Contents<](#Table-of-Contents)
-<!-- 结束折叠内容 -->
 
-
-
-
-
-
-
-sss
-stest
-
+<details><summary>
+  
 ### Refs Components
+</summary>
+
 1. [Led weerstand calculator](https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7)
 2. [Resistor Heat Calculator](https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator)
 3. [Pull-up and Pull-down Resistors](https://www.circuitbasics.com/pull-up-and-pull-down-resistors/)
@@ -284,4 +278,6 @@ stest
 17. [How mobile phone charger works ? | SMPS Switch mode power supply](https://www.youtube.com/watch?v=F2dCS5qOE8A)
 18. [Modular AC line EMI filters explained](https://passive-components.eu/modular-ac-line-emi-filters-explained/)
 19. [Bridge Rectifier With Capacitor Filter: Circuit Diagram and Explain Step by Step](https://www.voltagelab.com/bridge-rectifier-with-capacitor-filter/)
-
+  </details>
+</details>
+<!-- 结束折叠内容 -->
