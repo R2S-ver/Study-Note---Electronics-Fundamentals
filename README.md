@@ -233,7 +233,7 @@ While there are many types, the most common one you’ll encounter in hobbyist e
 This effectively turns the film into a long, coiled "wire" of carbon. <br>
 **4. End Caps and Leads** <br>
 Metal end caps are pressed onto both sides of the rod. Tinned copper "leads" (the legs you plug into a breadboard) are welded to these caps to connect the resistor to the rest of the circuit. <br>
-<img alt="21" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/21.png" width="768" height="768" /> <br>
+<img alt="21" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/21.png" width="692" height="1075" /> <br>
 **5. Protective Coating & Color Bands** <br>
 Finally, the entire body is coated in an insulating lacquer or epoxy to protect it from moisture and heat. The colored stripes are painted on to indicate the resistance value and tolerance. <br>
 <img alt="17" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/17.png" width="768" height="768" /> <br>
