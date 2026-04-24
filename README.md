@@ -240,7 +240,7 @@ Finally, the entire body is coated in an insulating lacquer or epoxy to protect 
 
 #### Theory: Voltage Division Principle
 In a series circuit with multiple resistors, the voltage drop is proportional to the resistance. If the resistance increases, the voltage across it increases as well (R↑ = V↑).
-##### Calculating the Series Resistor (Voltage Drop)
+**Calculating the Series Resistor (Voltage Drop)**
 Scenario: An LED operates at 3V and draws 13.5mA (0.0135A) of current with a 5V power source
 V_drop = V_source - V_LED = 2V
 R = V_drop / I
@@ -250,7 +250,6 @@ R = 2V / 0.0135A = 148.15 ohms (**150 ohm resistor**)
 An LED cannot be treated as a fixed ohmic resistor because it is a non-linear component. While a standard resistor follows Ohm's law (where current is directly proportional to voltage), an LED is a diode with a non-linear current-voltage curve.
     </details>
     <details><summary>
-      
 ### 🟦Conductor
 </summary>
         content 1.2
