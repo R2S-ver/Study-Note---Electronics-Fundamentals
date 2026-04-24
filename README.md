@@ -216,26 +216,26 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 #### What is a resistor?
 A resistor is a passive electronic component designed to create resistance in the flow of electric current. In a circuit, it acts like a "bump" for electrons. Its primary jobs are to limit the amount of current going through(to keep components like LEDs from burning out) and to divide voltage (as seen in your comparator circuit).
-##### Types
+##### **Types**
 <img alt="19" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/19.png" width="768" height="768" /> <br>
 
-##### Function
+##### **Function**
 <img alt="20" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/20.png" width="768" height="768" /> <br>
 
-While there are many types, the most common one you’ll encounter in hobbyist electronics (like those used in Tinkercad) is the Carbon Film Resistor.
-**1. The Ceramic Core**
-  At the center is a solid rod made of high-grade ceramic (an insulator). This acts as the structural base and does not conduct electricity.
-**2. The Carbon Film Layer**
-  A thin layer of pure carbon is deposited around the ceramic rod. This film is the resistive material that electrons must travel through.
-**3. The Helical Groove**
-    Shorter, wider spiral path = Lower resistance
-    Longer, thinner spiral path = Higher resistance
-This effectively turns the film into a long, coiled "wire" of carbon.
-**4. End Caps and Leads**
-Metal end caps are pressed onto both sides of the rod. Tinned copper "leads" (the legs you plug into a breadboard) are welded to these caps to connect the resistor to the rest of the circuit.
+While there are many types, the most common one you’ll encounter in hobbyist electronics (like those used in Tinkercad) is the Carbon Film Resistor. <br>
+**1. The Ceramic Core** <br>
+  At the center is a solid rod made of high-grade ceramic (an insulator). This acts as the structural base and does not conduct electricity. <br>
+**2. The Carbon Film Layer** <br>
+  A thin layer of pure carbon is deposited around the ceramic rod. This film is the resistive material that electrons must travel through. <br>
+**3. The Helical Groove** <br>
+    Shorter, wider spiral path = Lower resistance <br>
+    Longer, thinner spiral path = Higher resistance <br>
+This effectively turns the film into a long, coiled "wire" of carbon. <br>
+**4. End Caps and Leads** <br>
+Metal end caps are pressed onto both sides of the rod. Tinned copper "leads" (the legs you plug into a breadboard) are welded to these caps to connect the resistor to the rest of the circuit. <br>
 <img alt="21" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/21.png" width="768" height="768" /> <br>
-**5. Protective Coating & Color Bands**
-Finally, the entire body is coated in an insulating lacquer or epoxy to protect it from moisture and heat. The colored stripes are painted on to indicate the resistance value and tolerance.
+**5. Protective Coating & Color Bands** <br>
+Finally, the entire body is coated in an insulating lacquer or epoxy to protect it from moisture and heat. The colored stripes are painted on to indicate the resistance value and tolerance. <br>
 <img alt="17" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/17.png" width="768" height="768" /> <br>
 
 #### Theory: Voltage Division Principle
