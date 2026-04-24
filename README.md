@@ -237,7 +237,7 @@ Metal end caps are pressed onto both sides of the rod. Tinned copper "leads" (th
 **5. Protective Coating & Color Bands** <br>
 Finally, the entire body is coated in an insulating lacquer or epoxy to protect it from moisture and heat. The colored stripes are painted on to indicate the resistance value and tolerance. <br>
 <img alt="17" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/17.png" width="768" height="768" /> <br>
-
+↑ Limit the ampere VS led broke by too much ampere going through
 #### Theory: Voltage Division Principle
 In a series circuit with multiple resistors, the voltage drop is proportional to the resistance. If the resistance increases, the voltage across it increases as well (R↑ = V↑).
 **Calculating the Series Resistor (Voltage Drop)**
