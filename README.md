@@ -31,9 +31,9 @@ To better internalize these concepts and understand their practical applications
   1\. [Resistor](#Resistor) <br>
      &nbsp;&nbsp; 1.1\. Voltage Dropping <br>
      &nbsp;&nbsp; 1.2\. Voltage Comparator <br>
-  2\. [Conductor](#Conductor) <br>
-  3\. [Capacitor](#Capacitor) <br>
-     &nbsp;&nbsp; 3.1\. Low-pass and High-pass Filter <br>
+  2\. [Capacitor](#Capacitor) <br>
+     &nbsp;&nbsp; 2.1\. Low-pass and High-pass Filter <br>
+  3\. [Conductor](#Conductor) <br>
   4\. [Diode](#Diode) <br>
      &nbsp;&nbsp; 4.1\. Rectifier Bridge <br>
   5\. [Transistor](#Transistor) <br>
@@ -253,13 +253,13 @@ An LED(Light-emitting diode) cannot be treated as a fixed ohmic resistor because
 </details>
 <details><summary>
   
-### 🟦Conductor
+### 🟦Capacitor
 </summary>
         content 1.2
 </details>
      <details><summary>
       
-### 🟦Capacitor
+### 🟦Conductor
 </summary>
         content 1.2
 </details>
