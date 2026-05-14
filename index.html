@@ -1,355 +1,1170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Electronic Fundamentals - Study Logbook</title>
-  
-  <!-- 加载数学公式渲染引擎 -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal studylogbook of electronic fundamentals</title>
 
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #334155;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --accent: #2563eb;
-      --accent-2: #0f172a;
-      --safe-purple: #9333ea;
-    }
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: true,
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async>
+    </script>
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    <style>
+        :root {
+            --bg: #f5f7fb;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --line: #e5e7eb;
+            --accent: #2563eb;
+            --accent-2: #0f172a;
+            --purple: #7c3aed;
+            --blue: #2563eb;
+            --green: #059669;
+            --amber: #d97706;
+            --red-soft: #fef2f2;
+            --red-border: #fecaca;
+            --blue-soft: #eff6ff;
+            --blue-border: #bfdbfe;
+            --green-soft: #ecfdf5;
+            --green-border: #a7f3d0;
+        }
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    /* Hero Section */
-    .hero {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 48px 32px;
-      text-align: center;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    .hero img {
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 24px;
-    }
+        .wrap {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+        }
 
-    h1 {
-      font-size: 2.5rem;
-      color: var(--accent-2);
-      margin: 0 0 16px;
-    }
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 40px 32px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .hero img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            object-fit: cover;
+            background: #fff;
+            border: 1px solid var(--line);
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            margin: 0 0 14px;
+            font-size: clamp(28px, 4vw, 42px);
+            line-height: 1.2;
+            color: var(--accent-2);
+        }
+        .lead {
+            max-width: 840px;
+            margin: 0 auto 14px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+        .lang {
+            margin: 18px 0 0;
+            font-size: 15px;
+        }
+        .lang a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang a:hover {
+            text-decoration: underline;
+        }
 
-    .lead {
-      color: var(--muted);
-      max-width: 800px;
-      margin: 0 auto 24px;
-      font-size: 1.1rem;
-    }
+        /* ── Grid Layout ── */
+        .grid {
+            display: grid;
+            grid-template-columns: 270px 1fr;
+            gap: 20px;
+            margin-top: 22px;
+        }
+        @media (max-width: 860px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .toc {
+                position: static !important;
+            }
+        }
 
-    .notice-box {
-      background: #fff7ed;
-      border-left: 4px solid #f97316;
-      padding: 16px;
-      margin: 20px 0;
-      text-align: left;
-      font-size: 0.95rem;
-      border-radius: 4px;
-    }
+        /* ── TOC Sidebar ── */
+        .toc {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 22px 20px;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+            position: sticky;
+            top: 18px;
+            height: fit-content;
+            font-size: 14px;
+        }
+        .toc h2 {
+            margin: 0 0 12px;
+            font-size: 17px;
+            letter-spacing: 0.01em;
+            color: var(--accent-2);
+        }
+        .toc a {
+            display: block;
+            color: var(--text);
+            text-decoration: none;
+            padding: 5px 0;
+            border-radius: 6px;
+            transition: color 0.15s, background 0.15s;
+        }
+        .toc a:hover {
+            color: var(--accent);
+            background: #f1f5f9;
+            padding-left: 6px;
+        }
+        .toc .sub {
+            padding-left: 14px;
+            font-size: 13px;
+            color: var(--muted);
+        }
 
-    /* Layout */
-    .grid {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 30px;
-    }
+        /* ── Content ── */
+        .content {
+            display: grid;
+            gap: 18px;
+        }
+        .section,
+        .refs {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 26px 26px 22px;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+        }
+        .section h2,
+        .refs h2 {
+            margin: 0 0 12px;
+            font-size: 23px;
+            color: var(--accent-2);
+        }
+        .section h3 {
+            margin: 18px 0 10px;
+            font-size: 18px;
+            color: var(--accent-2);
+        }
+        .section h4 {
+            margin: 12px 0 6px;
+            font-size: 15px;
+            color: var(--text);
+        }
+        p {
+            margin: 0 0 12px;
+        }
+        .small {
+            color: var(--muted);
+            font-size: 13px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.02em;
+        }
+        .badge-purple {
+            background: #f3e8ff;
+            color: #6d28d9;
+        }
+        .badge-green {
+            background: #d1fae5;
+            color: #047857;
+        }
+        .divider {
+            border: 0;
+            border-top: 1px solid var(--line);
+            margin: 18px 0;
+        }
 
-    /* Sidebar TOC */
-    .toc {
-      position: sticky;
-      top: 20px;
-      height: fit-content;
-      background: var(--card);
-      padding: 24px;
-      border-radius: 16px;
-      border: 1px solid var(--line);
-    }
+        /* ── Images inside content ── */
+        .section img,
+        .refs img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid var(--line);
+            margin: 10px 0;
+            display: block;
+            background: #fafafa;
+        }
 
-    .toc h2 { font-size: 1.2rem; margin-top: 0; }
-    .toc ul { list-style: none; padding: 0; }
-    .toc li { margin-bottom: 12px; }
-    .toc a { 
-      text-decoration: none; 
-      color: var(--muted); 
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-    .toc a:hover { color: var(--accent); }
+        /* ── Details / Summary (collapsible) ── */
+        details {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            margin: 12px 0;
+            background: #fafcfe;
+            overflow: hidden;
+        }
+        details[open] {
+            background: #fff;
+        }
+        summary {
+            cursor: pointer;
+            padding: 14px 18px;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--accent-2);
+            background: #f8fafc;
+            border-bottom: 1px solid transparent;
+            transition: background 0.15s, border-color 0.15s;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            user-select: none;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::before {
+            content: '▸';
+            display: inline-block;
+            font-size: 12px;
+            transition: transform 0.2s;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        details[open]>summary::before {
+            transform: rotate(90deg);
+        }
+        details[open]>summary {
+            border-bottom: 1px solid var(--line);
+            background: #fff;
+        }
+        details .inner {
+            padding: 16px 18px;
+        }
+        /* nested details */
+        details details {
+            margin: 8px 0;
+            border-radius: 10px;
+        }
+        details details summary {
+            font-size: 14px;
+            padding: 10px 14px;
+            background: #f1f5f9;
+        }
+        details details[open]>summary {
+            background: #fff;
+        }
+        details details .inner {
+            padding: 10px 14px;
+        }
 
-    /* Main Content */
-    .content section {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 32px;
-      margin-bottom: 24px;
-    }
+        /* ── Ref list ── */
+        .refs ol {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        .refs li {
+            margin: 7px 0;
+            word-break: break-word;
+        }
+        .refs a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .refs a:hover {
+            text-decoration: underline;
+        }
 
-    /* Detail Styles */
-    details {
-      margin-bottom: 16px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
-    }
+        /* ── Blockquote / note ── */
+        .note-box {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #92400e;
+        }
+        .note-box strong {
+            color: #b45309;
+        }
 
-    summary {
-      padding: 16px;
-      background: #f1f5f9;
-      cursor: pointer;
-      font-weight: 600;
-      list-style: none;
-      display: flex;
-      align-items: center;
-    }
+        /* ── Inline code ── */
+        code {
+            background: #f1f5f9;
+            padding: 2px 7px;
+            border-radius: 5px;
+            font-size: 0.92em;
+            color: #1e293b;
+        }
 
-    summary::before {
-      content: '▶';
-      font-size: 0.8rem;
-      margin-right: 12px;
-      transition: transform 0.2s;
-    }
+        /* ── Math display tweaks ── */
+        mjx-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
 
-    details[open] summary::before {
-      transform: rotate(90deg);
-    }
+        /* ── Back-to-top link ── */
+        .back-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 13px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
 
-    .details-content {
-      padding: 20px;
-      border-top: 1px solid var(--line);
-    }
-
-    /* Formatting */
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin: 16px 0;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: #ede9fe;
-      color: var(--safe-purple);
-      font-weight: bold;
-      font-size: 0.8rem;
-      margin-bottom: 8px;
-    }
-
-    .back-top {
-      font-size: 0.85rem;
-      color: var(--accent);
-      text-decoration: none;
-      display: block;
-      margin-top: 20px;
-    }
-
-    blockquote {
-      margin: 20px 0;
-      padding: 1px 20px;
-      background: #f8fafc;
-      border-left: 4px solid var(--line);
-      font-style: italic;
-    }
-
-    @media (max-width: 850px) {
-      .grid { grid-template-columns: 1fr; }
-      .toc { display: none; }
-    }
-  </style>
+        /* ── Responsive images ── */
+        @media (max-width: 600px) {
+            .section img,
+            .refs img {
+                width: 100% !important;
+                height: auto !important;
+            }
+            .hero {
+                padding: 24px 16px;
+            }
+            .section,
+            .refs {
+                padding: 18px 16px;
+            }
+            summary {
+                font-size: 14px;
+                padding: 12px 14px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="wrap">
 
-  <div class="wrap">
-    <!-- Header Area -->
-    <header class="hero" id="top">
-      <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/Banner.png" alt="Logo">
-      <h1>Personal Studylogbook</h1>
-      <p class="lead">
-        Welcome to my learning repository! This project documents my self-study journey in the world of electricity and hardware, 
-        starting from basics to analog electronics.
-      </p>
-      
-      <div class="lang">
-        <a href="#">English</a> | <a href="#">中文</a>
-      </div>
+        <!-- ═══════════ HERO ═══════════ -->
+        <header class="hero">
+            <img alt="LOGO"
+            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/Banner%202.png"
+            width="256" height="auto" />
 
-      <div class="notice-box">
-        <strong>⚠️ Note on Regional Standards (Netherlands):</strong> 
-        The electrical safety analysis here is based on <strong>NEN 1010</strong> regulations. 
-        Voltage standards and safety mechanisms vary by country. 
-        <em>AI assistance was used to refine technical phrasing.</em>
-      </div>
-    </header>
+            <h1>Personal studylogbook of electronic fundamentals</h1>
 
-    <div class="grid">
-      <!-- Sidebar Navigation -->
-      <aside class="toc">
-        <h2>Contents</h2>
-        <ul>
-          <li><a href="#electrical-safety">01. Electrical Safety</a></li>
-          <li><a href="#voltage-current">02. Voltage & Current</a></li>
-          <li><a href="#components">03. Basic Components</a></li>
-        </ul>
-      </aside>
+            <p class="lang">
+                🌐 Language:
+                <a href="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md">English</a>
+                |
+                <a href="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md">中文</a>
+            </p>
 
-      <!-- Main Content -->
-      <main class="content">
-        
-        <!-- Chapter 1: Safety -->
-        <section id="electrical-safety">
-          <span class="badge">CHAPTER 01</span>
-          <h2>🟪 Electrical Safety at Home</h2>
-          
-          <details open>
-            <summary>🟦 1. Introduction & Project Scope</summary>
-            <div class="details-content">
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/1.png" alt="Scope">
-              <p>Focuses on electrical safety in my personal workspace (The Netherlands). Goals include mapping power distribution and identifying risks.</p>
+            <p class="lead">
+                Welcome to my learning repository! This project documents my self-study journey in the world of
+                electricity and hardware. I am starting from the very basics of electrical safety and slowly diving
+                into component-level circuit design. Currently, this repository focuses on
+                <strong>hardware fundamentals</strong> and <strong>analog electronics</strong>, without involving
+                microcontrollers (like Arduino) or digital logic programming yet.
+            </p>
+
+            <p class="lead">
+                To better internalize these concepts and understand their practical applications, I have included
+                real-world examples and case studies for each component. This "theory + application" approach helps
+                me review more effectively and bridges the gap between textbook knowledge and actual engineering
+                practice.
+            </p>
+
+            <p class="small">
+                <em>The images used in this repository are for educational and self-study purposes only. If you are
+                    the copyright owner of any image used here and would like it removed, please contact me.</em>
+            </p>
+
+            <div class="note-box">
+                <strong>⚠️ Note on Regional Standards &amp; AI Optimization:</strong> The electrical safety analysis
+                and examples documented here are based on my local usage scenario in
+                <strong>The Netherlands (Europe)</strong>. Voltage standards, electrical panel structures, protective
+                mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your
+                local regulations when working with electricity.
+                <em>Additionally, to ensure the precision of technical phrasing and professional terminology, AI
+                    assistance was utilized to optimize and refine this documentation.</em>
             </div>
-          </details>
+        </header>
 
-          <details>
-            <summary>🟦 2. Protective Mechanisms (NEN 1010)</summary>
-            <div class="details-content">
-              <p>In Dutch homes, the <strong>groepenkast</strong> must comply with safety regulations:</p>
-              <ul>
-                <li><strong>Main Switch:</strong> Total system shutdown.</li>
-                <li><strong>RCD (Aardlekschakelaar):</strong> Protects against leakage currents.</li>
-                <li><strong>Circuit Breakers:</strong> 1P+N vs 2P isolation.</li>
-              </ul>
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/2.png" alt="Mechanism">
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/4.png" alt="Breakers">
-            </div>
-          </details>
+        <!-- ═══════════ GRID: TOC + CONTENT ═══════════ -->
+        <div class="grid">
 
-          <details>
-            <summary>🟦 4. Practical Research & Optimization</summary>
-            <div class="details-content">
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/8.png" alt="Topology">
-              <p><strong>Key findings:</strong></p>
-              <ul>
-                <li>Welding Machine needs grounding.</li>
-                <li>Eliminate daisy-chaining (Tree vs Star topology).</li>
-                <li>Separate Office Zone from Heavy Machining Zone to avoid EMI.</li>
-              </ul>
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/11.png" alt="Adapters">
-            </div>
-          </details>
-          <a href="#top" class="back-top">↑ Back to top</a>
-        </section>
+            <!-- ── SIDEBAR TOC ── -->
+            <aside class="toc">
+                <h2>📋 Table of Contents</h2>
+                <a href="#electrical-safety">🟪 Electrical safety at home</a>
+                <a href="#es-1" class="sub">1. Introduction &amp; Project Scope</a>
+                <a href="#es-2" class="sub">2. Protective Mechanisms</a>
+                <a href="#es-3" class="sub">3. Potential Risks</a>
+                <a href="#es-4" class="sub">4. Practical Research</a>
+                <a href="#es-5" class="sub">5. References</a>
+                <a href="#voltage-and-current">🟪 Voltage and Current</a>
+                <a href="#vc-1" class="sub">1. Simple Explanation</a>
+                <a href="#vc-2" class="sub">2. Complex Explanation</a>
+                <a href="#vc-3" class="sub">3. Kirchhoff's Laws</a>
+                <a href="#basic-electrical-components">🟪 Basic Electrical Components</a>
+                <a href="#comp-resistor" class="sub">Resistor</a>
+                <a href="#comp-capacitor" class="sub">Capacitor</a>
+                <a href="#comp-conductor" class="sub">Conductor</a>
+                <a href="#comp-diode" class="sub">Diode</a>
+                <a href="#comp-transistor" class="sub">Transistor</a>
+                <a href="#comp-mosfet" class="sub">Mosfet</a>
+                <a href="#comp-psu" class="sub">Linear &amp; Switching PSU</a>
+                <a href="#comp-skills" class="sub">Practical Skills</a>
+                <a href="#comp-refs" class="sub">References</a>
+            </aside>
 
-        <!-- Chapter 2: Voltage & Current -->
-        <section id="voltage-current">
-          <span class="badge">CHAPTER 02</span>
-          <h2>🟪 Voltage and Current</h2>
-          
-          <details open>
-            <summary>🟦 1. The Water Analogy</summary>
-            <div class="details-content">
-              <ul>
-                <li><strong>Voltage (V):</strong> Water pressure.</li>
-                <li><strong>Current (I):</strong> Flow rate.</li>
-                <li><strong>Resistance (R):</strong> Pipe thickness.</li>
-              </ul>
-              <blockquote><strong>Ohm's Law:</strong> $V = I \times R$</blockquote>
-            </div>
-          </details>
+            <!-- ── MAIN CONTENT ── -->
+            <main class="content">
 
-          <details>
-            <summary>🟦 2. Complex Explanation: Field vs Electrons</summary>
-            <div class="details-content">
-              <p>Electrons move at a "snail's pace" (drift velocity), but energy propagates at nearly the speed of light via the <strong>electromagnetic field</strong>.</p>
-              <p>Voltage is the spatial accumulation of electric field force:</p>
-              $$V = \int_{A}^{B} \vec{E} \cdot d\vec{l}$$
-            </div>
-          </details>
+                <!-- ═══════════ ELECTRICAL SAFETY ═══════════ -->
+                <section class="section" id="electrical-safety">
+                    <span class="badge badge-purple">🟪 Chapter</span>
+                    <h2>Electrical safety at home</h2>
 
-          <details>
-            <summary>🟦 3. Kirchhoff’s Laws</summary>
-            <div class="details-content">
-              <p><strong>KCL (Conservation of Charge):</strong> $\sum I_{in} = \sum I_{out}$</p>
-              <p><strong>KVL (Conservation of Energy):</strong> $\oint \vec{E} \cdot d\vec{l} = 0$</p>
-            </div>
-          </details>
-          <a href="#top" class="back-top">↑ Back to top</a>
-        </section>
+                    <!-- 1. Introduction -->
+                    <details id="es-1" open>
+                        <summary>🟦 1. Introduction &amp; Project Scope</summary>
+                        <div class="inner">
+                            <img alt="Workspace overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/1.png"
+                            width="512" height="512" loading="lazy" />
+                            <p>This section focuses on electrical safety at home, specifically in my personal
+                                workspace (my bedroom) and the equipment used within it.</p>
+                            <p><strong>Goals of this study:</strong></p>
+                            <ul>
+                                <li>Systematically map the power distribution structure and usage patterns.</li>
+                                <li>Identify potential safety risks.</li>
+                                <li>Identify the main energy-consuming devices.</li>
+                                <li>Design safe, reliable, and feasible solutions for energy savings.</li>
+                            </ul>
+                        </div>
+                    </details>
 
-        <!-- Chapter 3: Components -->
-        <section id="components">
-          <span class="badge">CHAPTER 03</span>
-          <h2>🟪 Basic Electrical Components</h2>
-          
-          <details open>
-            <summary>🟦 Resistor</summary>
-            <div class="details-content">
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/19.png" alt="Resistor">
-              <p>A resistor creates resistance in current flow. Most common is the <strong>Carbon Film Resistor</strong>.</p>
-              <p><strong>Case Study - Voltage Dropping:</strong> To power a 3V LED from 5V at 13.5mA:</p>
-              <code>R = (5V - 3V) / 0.0135A = 148Ω (Use 150Ω)</code>
-            </div>
-          </details>
+                    <!-- 2. Protective Mechanisms -->
+                    <details id="es-2">
+                        <summary>🟦 2. Protective Mechanisms in the Household Electrical System</summary>
+                        <div class="inner">
+                            <p>In Dutch homes, the distribution board (<em>groepenkast</em>) is located in the
+                                meter cupboard. The structure must comply with the <strong>NEN 1010</strong> safety
+                                regulations. The power enters through the grid connection and passes through the
+                                following main safety components:</p>
+                            <ul>
+                                <li><strong>Main Fuse &amp; Main Switch:</strong> For total system shutdown.</li>
+                                <li><strong>Residual Current Device:</strong> Protects against electrocution by
+                                    detecting leakage currents.</li>
+                                <li><strong>Circuit Breakers:</strong> Distributes the installation into groups.
+                                    Heavy consumers (like induction cooktops) get a separate 1-phase or 3-phase
+                                    group with higher capacity and dedicated protection.</li>
+                                <li><strong>Grounding:</strong> Provides a safe path for fault currents.</li>
+                            </ul>
+                            <img alt="Distribution board structure"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/2.png"
+                            width="512" height="512" loading="lazy" />
 
-          <details>
-            <summary>🟦 Capacitor & Diode</summary>
-            <div class="details-content">
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/27.png" alt="Capacitor">
-              <p>Practical Case: <strong>Rectifier Bridge</strong>. Converts AC to DC using diodes and smooths the ripple with capacitors.</p>
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/24.png" alt="Rectifier">
-            </div>
-          </details>
+                            <h4>🟩 Circuit Breakers: 1P vs. 2P</h4>
+                            <ul>
+                                <li><strong>1P Breaker:</strong> Interrupts the circuit, but the appliance remains
+                                    connected to the grid via the neutral wire (N).</li>
+                                <li><strong>2P / 1P+N Breaker:</strong> Interrupts <strong>both</strong> conductors
+                                    (Phase and Neutral).</li>
+                                <li><strong>Why is full isolation important?</strong> With a 1P breaker, the
+                                    neutral remains connected. In the event of a fault or incorrect wiring, the
+                                    appliance could still carry voltage. A 2P breaker ensures complete electrical
+                                    isolation and a safer shutdown.</li>
+                            </ul>
+                            <img alt="1P vs 2P breaker"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/4.png"
+                            width="512" height="512" loading="lazy" />
 
-          <details>
-            <summary>🟦 Power Supplies (Linear vs SMPS)</summary>
-            <div class="details-content">
-              <p>Switch-Mode Power Supplies (SMPS) are more efficient but complex. Below is the analysis of a 230V-12V converter:</p>
-              <img src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/32.png" alt="SMPS">
-            </div>
-          </details>
-          <a href="#top" class="back-top">↑ Back to top</a>
-        </section>
+                            <h4>🟩 Trip Characteristics</h4>
+                            <p>Circuit breakers protect against overload and short circuits by automatically
+                                switching off. The trip characteristic determines how fast the breaker reacts to a
+                                current spike (e.g., when turning on a device).</p>
+                            <ul>
+                                <li>Common types: <strong>B, C, D, K, Z, and MA</strong>.</li>
+                                <li>The difference lies in the current value at which the breaker trips
+                                    magnetically, expressed as a multiple of the nominal current (In). (e.g.,
+                                    C-curves are better for devices with higher inrush currents).</li>
+                            </ul>
+                            <img alt="Trip characteristics chart"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/3.png"
+                            width="512" height="512" loading="lazy" />
+                        </div>
+                    </details>
 
-      </main>
+                    <!-- 3. Potential Risks -->
+                    <details id="es-3">
+                        <summary>🟦 3. Potential Risks in Household Power Usage</summary>
+                        <div class="inner">
+                            <img alt="Hard vs Stranded wire"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/5.png"
+                            width="512" height="512" loading="lazy" />
+                            <p>Hard VS Stranded wire (Different application scenarios)</p>
+                            <img alt="Wire comparison"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/6.png"
+                            width="512" height="512" loading="lazy" />
+
+                            <h4>🟩 3.1. Cable Sizing (Cross sectional area in mm²)</h4>
+                            <p>The diameter (cross-section) of a cable determines the maximum current it can
+                                safely carry. Thicker cables = lower resistance = higher current capacity.</p>
+                            <p><em>Key factors influencing cable choice:</em></p>
+                            <ul>
+                                <li><strong>3.1.1. Material:</strong> Copper, Aluminum, or CCA (Copper Clad
+                                    Aluminum).</li>
+                                <li><strong>3.1.2. Core type:</strong> Solid vs. stranded wire (influences skin
+                                    effect and contact surface).</li>
+                                <li><strong>3.1.3. Length:</strong> Longer cables have higher resistance and
+                                    voltage drop.</li>
+                                <li><strong>3.1.4. Ambient Temperature:</strong> Heat is harder to dissipate in
+                                    high temperatures.</li>
+                                <li><strong>3.1.5. Cable Density:</strong> Number of cables packed together in a
+                                    conduit (heat buildup).</li>
+                                <li><strong>3.1.6. Short-circuit Current:</strong> Ability to withstand heat
+                                    during a short circuit.</li>
+                            </ul>
+                            <img alt="Cable cross-section reference"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/7.png"
+                            width="512" height="512" loading="lazy" />
+
+                            <h4>🟩 3.2. Cord Defects</h4>
+                            <p>A damaged cable can lead to short circuits, electric shocks, or fire.</p>
+                            <ul>
+                                <li>Damage to the outer jacket.</li>
+                                <li>Color changes due to overheating.</li>
+                                <li>Excessive bending or pinching.</li>
+                                <li>Aging/brittle insulation material.</li>
+                            </ul>
+
+                            <h4>🟩 3.3. Operating Environment</h4>
+                            <p>Extra caution is required in damp or wet environments.</p>
+                            <ul>
+                                <li>Is the device properly grounded?</li>
+                                <li>Does the IP rating meet the standard for the area?</li>
+                                <li>Is an RCD present?</li>
+                                <li>Location of the appliance and potential corrosion of contact points.</li>
+                            </ul>
+
+                            <h4>🟩 3.4. Overload, Overvoltage and Short Circuits</h4>
+                            <ul>
+                                <li><strong>Simultaneous Use:</strong> Running multiple high-wattage devices on one
+                                    group (max. 10A/16A).</li>
+                                <li><strong>Long-term Heavy Load:</strong> Leads to overheating of cables.</li>
+                                <li><strong>Daisy-Chaining:</strong> Plugging power strips into other power strips
+                                    (major overload risk).</li>
+                                <li><strong>Poor Contacts:</strong> High contact resistance causes heat.</li>
+                                <li><strong>Limited Heat Dissipation:</strong> Especially dangerous when using
+                                    coiled cable reels (always unroll them completely to prevent overheating).
+                                </li>
+                                <li><strong>Lack of Surge Protection:</strong> Vulnerability to voltage spikes
+                                    (<em>Overspanningsbeveiliging</em>).</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 4. Practical Research -->
+                    <details id="es-4">
+                        <summary>🟦 4. Practical Research</summary>
+                        <div class="inner">
+                            <img alt="Topology schema of workspace"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/8.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <p>During this research, I'm doing a research into the electrical infrastructure of my
+                                workplace, focusing on safety and operational reliability. Based on this analysis,
+                                I made a detailed topology schema of the workspace. The core objective of this
+                                project is to understand electrical topology mapping and perform risk assessments.
+                                To ensure clarity—especially since many specialized tools lack standardized
+                                electrical symbols; I use icons to improve recognizability.</p>
+
+                            <h4>🟩 Potential risks and Optimization Plan</h4>
+                            <img alt="Risk analysis overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/9.png"
+                            width="768" height="768" loading="lazy" />
+                            <p><strong>4.1. Welding Machine Grounding:</strong> The welding machine is currently
+                                ungrounded. This poses a significant safety risk and must be connected directly to
+                                the main grounding system of the distribution board (<em>meterkast</em>).</p>
+                            <p><strong>4.2. Inrush Current (Current Peaks):</strong> The inrush current of the
+                                welding machine is too high (20-30A) for the current circuit. The device needs to
+                                be moved to a different group/circuit equipped with a heavier-duty circuit breaker
+                                and adequate overload protection.</p>
+                            <p><strong>4.3. Trip Characteristics:</strong> For the welding equipment, a circuit
+                                breaker with a C or D-curve characteristic should be used. These are specifically
+                                designed to handle high starting currents and peak loads without tripping
+                                prematurely.</p>
+                            <img alt="Daisy-chaining risk"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/10.png"
+                            width="768" height="768" loading="lazy" />
+                            <p><strong>4.4. Eliminating Daisy-Chaining:</strong> Connecting power strips in series
+                                (daisy-chaining) increases contact resistance, leading to heat buildup and fire
+                                hazards. The setup must be converted from a "tree structure" to a star topology.
+                                Furthermore, a high-quality 16A power strip with an extra-long lead should be used
+                                instead of multiple interconnected strips.</p>
+                            <p><strong>4.5. Voltage Dips &amp; EMI:</strong> Heavy consumers, such as the
+                                compressor and angle grinder, cause voltage dips and Electromagnetic Interference
+                                (EMI). This disrupts sensitive electronics like PCs and monitors. The solution is
+                                to place heavy machinery on a separate circuit or physically disconnect sensitive
+                                electronics during heavy work.</p>
+                            <img alt="Travel adapter issues"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/11.png"
+                            width="768" height="768" loading="lazy" />
+                            <p><strong>4.6. Travel Adapters:</strong> The contact surfaces of travel adapters are
+                                often too small for high-current applications. To improve safety, current plugs
+                                should be replaced with standard European plugs or industrial-grade power strips
+                                with high load capacities.</p>
+                            <p><strong>4.7. Zoning &amp; Circuit Distribution:</strong> The workshop will be
+                                divided into a "Machining Zone" and an "Office Zone," each connected to separate
+                                circuits (e.g., 16A per group). Where possible, wiring should be upgraded from
+                                2.5mm² to 4mm² or 6mm². Additionally, an RCD (Residual Current Device) should be
+                                installed, and consumer-grade power strips replaced with professional PDUs (Power
+                                Distribution Units).</p>
+                            <img alt="Direct connection recommendation"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/12.png"
+                            width="768" height="768" loading="lazy" />
+                            <p><strong>4.8. Direct Connection:</strong> Secondary power strips should be
+                                eliminated. Critical equipment, such as PCs and monitors, must be plugged directly
+                                into wall sockets. Heavy tools like the compressor should be grouped onto their own
+                                dedicated circuit.</p>
+                            <p><strong>4.9. Prevention &amp; Warning Labels:</strong> Safety signage will be
+                                applied to the workspace. This includes prohibitions on simultaneously starting
+                                multiple heavy machines (to prevent overload) and a ban on using coiled extension
+                                cords (to prevent induction-based heat buildup).</p>
+                            <img alt="Warning labels"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/13.png"
+                            width="768" height="768" loading="lazy" />
+                            <img alt="Safety signage detail"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/14.png"
+                            width="512" height="512" loading="lazy" />
+
+                            <h4>🟩 Conclusion</h4>
+                            <p>The result of this research is the identification of nine critical risk factors,
+                                ranging from missing grounds on heavy machinery to fire hazards caused by
+                                'daisy-chaining'. This analysis has led to a concrete optimization plan to
+                                transform the workshop into a safe, professional environment. The research proves
+                                that the current installation is not equipped for the simultaneous use of
+                                industrial tools and sensitive electronics. Moving from a serial 'tree structure'
+                                to a parallel 'star topology' and separating circuits are essential steps to
+                                guarantee fire safety and operational stability.</p>
+
+                            <h4>🟩 Reflection</h4>
+                            <p>Analyzing the installation and formulating concrete improvements has significantly
+                                increased my awareness of electrical safety. I have become much more alert to how
+                                equipment is used in my daily environment. This research has not only provided me
+                                with technical skills but also fostered a critical, observant attitude toward
+                                potential risks within the physical infrastructure of my work place.</p>
+                            <img alt="New Work Zone"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/16.png"
+                            width="768" height="768" loading="lazy" />
+                            <p>↑ New Work Zone</p>
+
+                            <h4>🟩 Optimization</h4>
+                            <p>To mitigate the risks identified in my research, I have implemented a physical
+                                separation of equipment to minimize interference and balance the electrical load:
+                            </p>
+                            <ul>
+                                <li><strong>Office Zone:</strong> All sensitive electronic devices, including my PC
+                                    and monitors, are now consolidated in a dedicated office area (bedroom). This
+                                    zone is isolated from heavy-duty machinery to prevent hardware damage caused
+                                    by Electromagnetic Interference (EMI) and voltage dips.</li>
+                                <li><strong>Work Zone:</strong> Industrial equipment and processing power tools
+                                    have been moved to a separate room. By isolating the heavy power loads (such
+                                    as the welding machine and air compressor) from the delicate electronics;
+                                    significantly reducing the risk of circuit overloads and improved the overall
+                                    stability of the infrastructure.</li>
+                            </ul>
+                            <a class="back-link" href="#electrical-safety">▴ Back to Electrical Safety top</a>
+                        </div>
+                    </details>
+
+                    <!-- 5. References -->
+                    <details id="es-5">
+                        <summary>🟦 5. References – Electrical Safety</summary>
+                        <div class="inner refs">
+                            <ol>
+                                <li><a href="https://saelektroexperts.nl/en/meterkast-problemen/hoe-werkt-de-aansluiting-van-een-meterkast-op-de-hoofdzekering/"
+                                        target="_blank" rel="noopener">How does the connection of a meter box to
+                                        the main fuse work?</a></li>
+                                <li><a href="https://www.drixes-elektricien.nl/groepenkast/overzicht"
+                                        target="_blank" rel="noopener">Groepenkast overzicht</a></li>
+                                <li><a href="https://texasgateway.org/resource/68-electrical-safety-systems-and-devices"
+                                        target="_blank" rel="noopener">Electrical Safety Systems and Devices</a>
+                                </li>
+                                <li><a href="https://www.mall99.co.ke/types-of-electrical-wires-and-cables/"
+                                        target="_blank" rel="noopener">Types of electrical wires and cables</a>
+                                </li>
+                                <li><a href="https://viox.com/cable-size-types-mm-awg-bs-conversion-guide/"
+                                        target="_blank" rel="noopener">Cable size types mm AWG BS conversion
+                                        guide</a></li>
+                                <li><a href="https://electronics.stackexchange.com/questions/688210/what-is-the-purpose-of-neutral-disconnect-in-a-circuit-breaker"
+                                        target="_blank" rel="noopener">What is the purpose of neutral disconnect
+                                        in a circuit breaker?</a></li>
+                                <li><a href="https://www.se.com/nl/nl/faqs/FA277439/" target="_blank"
+                                        rel="noopener">Schneider Electric FAQ</a></li>
+                                <li><a href="https://mens-en-gezondheid.infonu.nl/leven/166505-veilig-elektriciteitsgebruik-en-eerste-hulp-bij-elektrocutie.html"
+                                        target="_blank" rel="noopener">Veilig elektriciteitsgebruik en eerste hulp
+                                        bij elektrocutie</a></li>
+                                <li><a href="https://www.elektramat.nl/kennisbank/aderdikte/" target="_blank"
+                                        rel="noopener">Aderdikte kennisbank</a></li>
+                                <li><a href="https://builder-calc.com/nl/elektronica/kabeldoorsnedecalculator-op-basis-van-vermogen-en-stroom-online-berekening.html"
+                                        target="_blank" rel="noopener">Kabeldoorsnede calculator</a></li>
+                                <li><a href="https://www.livios.be/nl/artikel/63803/elektriciteit-in-de-badkamer-wat-kan-en-wat-niet/"
+                                        target="_blank" rel="noopener">Elektriciteit in de badkamer: wat kan en wat
+                                        niet?</a></li>
+                                <li><a href="https://www.vanlieshoutelektra.nl/nieuws/zo-voorkomt-u-overbelasting-op-tijdelijke-installaties/"
+                                        target="_blank" rel="noopener">Zo voorkomt u overbelasting op tijdelijke
+                                        installaties</a></li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <a class="back-link" href="#electrical-safety">▴ Back to Table of Contents</a>
+                </section>
+
+                <!-- ═══════════ VOLTAGE AND CURRENT ═══════════ -->
+                <section class="section" id="voltage-and-current">
+                    <span class="badge badge-purple">🟪 Chapter</span>
+                    <h2>Voltage and Current</h2>
+
+                    <details id="vc-1" open>
+                        <summary>🟦 1. Simple Explanation</summary>
+                        <div class="inner">
+                            <p>To build an intuitive understanding, let's use a water pipe analogy:</p>
+                            <ul>
+                                <li><strong>Voltage (V):</strong> Equivalent to <strong>water pressure</strong>. It
+                                    is the potential energy difference that pushes electric charges through a
+                                    circuit.</li>
+                                <li><strong>Current (I):</strong> Equivalent to <strong>water flow rate
+                                        (velocity)</strong>. It is the actual movement of electric charges inside
+                                    the conductor.</li>
+                                <li><strong>Resistance (R):</strong> Equivalent to <strong>pipe thickness</strong>.
+                                    A narrower pipe provides greater resistance to the flow of water.</li>
+                            </ul>
+                            <div class="note-box">
+                                <strong>Ohm's Law:</strong> $V = I \times R$
+                            </div>
+                        </div>
+                    </details>
+
+                    <details id="vc-2">
+                        <summary>🟦 2. Complex Explanation</summary>
+                        <div class="inner">
+                            <p>When we flip a switch, the light bulb turns on instantly. Do electrons rush from the
+                                battery to the bulb at the speed of light? <strong>Not at all.</strong></p>
+
+                            <h4>🟩 2.1. "Snail-paced" Electrons vs. "Light-speed" Energy Propagation</h4>
+                            <p>Inside metallic conductors (like copper wires), it is packed with free electrons,
+                                forming what is known as an <strong>"electron sea"</strong>.</p>
+                            <ul>
+                                <li><strong>Drift Velocity:</strong> When a circuit is powered, electrons move
+                                    forward under the drive of electric field forces. However, because they
+                                    constantly collide with the crystalline lattice of copper atoms, their net
+                                    movement speed is incredibly slow—typically only <strong>a few micrometers to
+                                        millimeters per second</strong> (slower than a snail).</li>
+                                <li><strong>Establishment of the Electromagnetic Field:</strong> If electrons move
+                                    so slowly, why does the light bulb turn on instantly? Because what truly
+                                    transmits energy is not the electrons themselves, but the
+                                    <strong>electromagnetic field</strong>. The moment the switch is closed, an
+                                    electric field is established around the wire at <strong>nearly the speed of
+                                        light</strong> (approx. $3 \times 10^8 \text{ m/s}$).</li>
+                                <li><strong>The Physical Reality:</strong> Free electrons already exist throughout
+                                    the entire wire. Once the electric field is established, all electrons along
+                                    the line receive the command of the electric field force ($F = qE$) at almost
+                                    the same instant and start moving together. This is like a long queue of
+                                    tightly packed people—if the person at the back gets pushed, the person at the
+                                    very front moves instantly, without needing to wait for the last person to
+                                    physically run to the front.</li>
+                            </ul>
+
+                            <h4>🟩 2.2. The Essence of Voltage: Space Accumulation of Electric Field Force</h4>
+                            <p>In physics, the essence of voltage is the <strong>electrical potential
+                                    difference</strong>. The role of a battery or power source is to forcefully
+                                separate positive and negative charges using chemical or magnetic energy, thereby
+                                creating an <strong>electric field</strong> in space. As a battery discharges, its
+                                voltage drops from high to low, and charging reverses this process. Therefore,
+                                measuring a battery's voltage can help determine its state (though this does not
+                                apply perfectly to all battery types). When an electron moves through an electric
+                                field, the field force does work on it. Voltage is defined as the work done by the
+                                electric field force per unit charge as it moves between two points:</p>
+
+                            $$V = \int_{A}^{B} \vec{E} \cdot d\vec{l}$$
+
+                            <p>Thus, voltage is not some invisible gas pressure, but rather the <strong>spatial
+                                    accumulation of an "invisible push" exerted by the electric field on electric
+                                    charges</strong>.</p>
+                        </div>
+                    </details>
+
+                    <details id="vc-3">
+                        <summary>🟦 3. Kirchhoff's Laws</summary>
+                        <div class="inner">
+                            <p>These two laws are not just tools for circuit analysis; they are specific
+                                manifestations of the universe's fundamental physical laws—<strong>conservation of
+                                    charge</strong> and <strong>conservation of energy</strong>—within an
+                                electrical circuit.</p>
+
+                            <h4>🟩 3.1. Kirchhoff's Current Law (KCL) — Why Electrons Cannot Pile Up Out of
+                                Nowhere</h4>
+                            <ul>
+                                <li><strong>Macroscopic Formula:</strong> $\sum I_{in} = \sum I_{out}$</li>
+                                <li><strong>Microscopic Physics:</strong> Electrons carry negative charges.
+                                    According to <strong>Coulomb's Law</strong>, there is an immensely powerful
+                                    repulsive force between like charges. If more electrons flow into a specific
+                                    junction (node) than flow out, negative charge would rapidly accumulate at
+                                    that node.</li>
+                                <li><strong>Self-Regulating Mechanism:</strong> The moment negative charge begins
+                                    to accumulate at a node, the powerful repulsive force it generates instantly
+                                    "pushes away" incoming electrons behind it while "speeding up" the outgoing
+                                    electrons ahead. This microscopic self-balancing process finishes within a few
+                                    nanoseconds. Consequently, under steady-state conditions, <strong>no node can
+                                        hold excess net charge</strong>; whatever current goes in must come out.
+                                </li>
+                            </ul>
+
+                            <h4>🟩 3.2. Kirchhoff's Voltage Law (KVL) — Why a Full Loop Must Equal Zero</h4>
+                            <ul>
+                                <li><strong>Macroscopic Formula:</strong> $\sum V = 0$</li>
+                                <li><strong>Microscopic Physics:</strong> In electrostatics or low-frequency
+                                    circuits, the electric field is a <strong>conservative field (an electrostatic
+                                        field is irrotational)</strong>. This means the work done by the electric
+                                    field force depends only on the starting and ending positions, completely
+                                    independent of the path taken. If you take a charge from a point, move it
+                                    around a complete loop in the circuit (experiencing voltage boosts from
+                                    sources and drops from resistors), and return to the starting point, the net
+                                    work done by the electric field force must be exactly zero:</li>
+                            </ul>
+
+                            $$\oint \vec{E} \cdot d\vec{l} = 0$$
+
+                            <ul>
+                                <li><strong>Energy Conservation Analogy:</strong> A power source acts like a
+                                    "charge elevator," consuming chemical energy to lift electrons from a lower
+                                    potential to a higher potential (gaining electrical potential energy). As
+                                    electrons flow through a resistor, the potential energy gained in the elevator
+                                    is entirely converted into <strong>thermal energy</strong> or <strong>light
+                                        energy</strong> through collisions with the atomic lattice. By the time
+                                    the electron returns to the negative terminal of the battery, its energy is
+                                    precisely depleted. Energy cannot be created out of nothing, nor can it
+                                    vanish; this is the ultimate truth behind KVL.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <a class="back-link" href="#voltage-and-current">▴ Back to Table of Contents</a>
+                </section>
+
+                <!-- ═══════════ BASIC ELECTRICAL COMPONENTS ═══════════ -->
+                <section class="section" id="basic-electrical-components">
+                    <span class="badge badge-purple">🟪 Chapter</span>
+                    <h2>Basic electrical components</h2>
+
+                    <!-- Resistor -->
+                    <details id="comp-resistor">
+                        <summary>🟦 Resistor</summary>
+                        <div class="inner">
+                            <img alt="Resistor overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/19.png"
+                            width="1024" height="1024" loading="lazy" />
+
+                            <h4>What is a resistor?</h4>
+                            <p>A resistor is a passive electronic component designed to create resistance in the
+                                flow of electric current. In a circuit, it acts like a "bump" for electrons. Its
+                                primary jobs are to limit the amount of current going through (to keep components
+                                like LEDs from burning out) and to divide voltage (as seen in your comparator
+                                circuit).</p>
+
+                            <img alt="Carbon film resistor cross-section"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/18.jpg"
+                            width="768" height="768" loading="lazy" />
+
+                            <p>While there are many types, the most common one you'll encounter in hobbyist
+                                electronics (like those used in Tinkercad) is the <strong>Carbon Film
+                                    Resistor</strong>.</p>
+                            <ul>
+                                <li><strong>1. The Ceramic Core:</strong> At the center is a solid rod made of
+                                    high-grade ceramic (an insulator). This acts as the structural base and does
+                                    not conduct electricity.</li>
+                                <li><strong>2. The Carbon Film Layer:</strong> A thin layer of pure carbon is
+                                    deposited around the ceramic rod. This film is the resistive material that
+                                    electrons must travel through.</li>
+                                <li><strong>3. The Helical Groove:</strong> Shorter, wider spiral path = Lower
+                                    resistance. Longer, thinner spiral path = Higher resistance. This effectively
+                                    turns the film into a long, coiled "wire" of carbon.</li>
+                                <li><strong>4. End Caps and Leads:</strong> Metal end caps are pressed onto both
+                                    sides of the rod. Tinned copper "leads" (the legs you plug into a breadboard)
+                                    are welded to these caps to connect the resistor to the rest of the circuit.
+                                </li>
+                            </ul>
+                            <img alt="Resistor color bands"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/21.png"
+                            width="346" height="537" loading="lazy" />
+                            <p><strong>5. Protective Coating &amp; Color Bands:</strong> Finally, the entire body
+                                is coated in an insulating lacquer or epoxy to protect it from moisture and heat.
+                                The colored stripes are painted on to indicate the resistance value and tolerance.
+                            </p>
+
+                            <img alt="LED current limiting comparison"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/17.png"
+                            width="768" height="768" loading="lazy" />
+                            <p>↑ Limit the ampere vs LED broke by too much ampere going through</p>
+
+                            <h4>Theory: Voltage Division Principle</h4>
+                            <p>In a series circuit with multiple resistors, the voltage drop is proportional to the
+                                resistance. If the resistance increases, the voltage across it increases as well
+                                (R↑ = V↑).</p>
+
+                            <p><strong>Calculating the Series Resistor (Voltage Drop):</strong><br />
+                                Scenario: An LED operates at 3V and draws 13.5mA (0.0135A) of current with a 5V
+                                power source.</p>
+                            <p>
+                                V_drop = V_source - V_LED = 2V<br />
+                                R = V_drop / I<br />
+                                R = 2V / 0.0135A = 148.15 ohms (<strong>150 ohm resistor</strong>)
+                            </p>
+
+                            <h4>LED as Resistance?</h4>
+                            <p>An LED (Light-emitting diode) cannot be treated as a fixed ohmic resistor because it
+                                is a non-linear component. While a standard resistor follows Ohm's law (where
+                                current is directly proportional to voltage), an LED is a diode with a non-linear
+                                current-voltage curve.</p>
+
+                            <h4>Practical electrical schematic case – Voltage Comparator</h4>
+                            <img alt="Voltage comparator schematic 1"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/23.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <img alt="Voltage comparator schematic 2"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/22.png"
+                            width="1024" height="1024" loading="lazy" />
+
+                            <h4>Conclusion</h4>
+                            <img alt="Resistor conclusion diagram"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/20.png"
+                            width="1024" height="1024" loading="lazy" />
+                        </div>
+                    </details>
+
+                    <!-- Capacitor -->
+                    <details id="comp-capacitor">
+                        <summary>🟦 Capacitor</summary>
+                        <div class="inner">
+                            <img alt="Capacitor overview 1"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/27.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <img alt="Capacitor overview 2"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/28.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <p class="small">Capacitor study notes – visual reference sheets covering types,
+                                characteristics, and applications.</p>
+                        </div>
+                    </details>
+
+                    <!-- Conductor -->
+                    <details id="comp-conductor">
+                        <summary>🟦 Conductor</summary>
+                        <div class="inner">
+                            <img alt="Conductor overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/29.png"
+                            width="1024" height="1024" loading="lazy" />
+
+                            <h4>Practical electrical schematic case – Rectifier Bridge</h4>
+                            <img alt="Rectifier bridge 1"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/24.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <img alt="Rectifier bridge 2"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/25.png"
+                            width="1024" height="1024" loading="lazy" />
+                        </div>
+                    </details>
+
+                    <!-- Diode -->
+                    <details id="comp-diode">
+                        <summary>🟦 Diode</summary>
+                        <div class="inner">
+                            <img alt="Diode overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/30.png"
+                            width="1024" height="1024" loading="lazy" />
+
+                            <h4>Practical electrical schematic case – Rectifier Bridge</h4>
+                            <img alt="Rectifier bridge diode case"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/26.png"
+                            width="1024" height="1024" loading="lazy" />
+                        </div>
+                    </details>
+
+                    <!-- Transistor -->
+                    <details id="comp-transistor">
+                        <summary>🟦 Transistor</summary>
+                        <div class="inner">
+                            <p>🚧 UPCOMING — Content on transistors will be added soon.</p>
+                        </div>
+                    </details>
+
+                    <!-- Mosfet -->
+                    <details id="comp-mosfet">
+                        <summary>🟦 Mosfet</summary>
+                        <div class="inner">
+                            <p>🚧 UPCOMING — Content on MOSFETs will be added soon.</p>
+                        </div>
+                    </details>
+
+                    <!-- Linear and Switching Power Supply -->
+                    <details id="comp-psu">
+                        <summary>🟦 Linear and Switching Power Supply</summary>
+                        <div class="inner">
+                            <img alt="Linear vs Switching PSU overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/31.png"
+                            width="1024" height="1024" loading="lazy" />
+
+                            <h4>Practical electrical schematic case – 230V to 12V Switching Power Supply</h4>
+                            <img alt="SMPS analysis 1"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/32.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <img alt="SMPS analysis 2"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/33.png"
+                            width="1024" height="1024" loading="lazy" />
+                            <img alt="SMPS analysis 3"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/34.png"
+                            width="1024" height="1024" loading="lazy" />
+                        </div>
+                    </details>
+
+                    <!-- Practical Skills -->
+                    <details id="comp-skills">
+                        <summary>🟦 Practical skills</summary>
+                        <div class="inner">
+                            <img alt="Practical skills overview"
+                            src="https://raw.githubusercontent.com/R2S-ver/Study-Electronics-Fundamentals/main/assets/images/35.png"
+                            width="1024" height="1024" loading="lazy" />
+                        </div>
+                    </details>
+
+                    <!-- References -->
+                    <details id="comp-refs">
+                        <summary>🟦 References – Components</summary>
+                        <div class="inner refs">
+                            <ol>
+                                <li><a href="https://www.budgetronics.eu/nl/led-weerstand-calculator/c-7"
+                                        target="_blank" rel="noopener">LED weerstand calculator</a></li>
+                                <li><a href="https://a2zcalculators.com/science-and-engineering-calculators/resistor-heat-calculator"
+                                        target="_blank" rel="noopener">Resistor Heat Calculator</a></li>
+                                <li><a href="https://www.circuitbasics.com/pull-up-and-pull-down-resistors/"
+                                        target="_blank" rel="noopener">Pull-up and Pull-down Resistors</a></li>
+                                <li><a href="https://www.ti.com/product/LM393#features" target="_blank"
+                                        rel="noopener">Voltage comparator LM393 data sheet | TI.com</a></li>
+                                <li><a href="https://www.learningaboutelectronics.com/Articles/LM393-voltage-comparator-circuit.php"
+                                        target="_blank" rel="noopener">How to Build a Voltage Comparator Circuit
+                                        Using an LM393</a></li>
+                                <li><a href="https://www.omnicalculator.com/physics/lc-filter" target="_blank"
+                                        rel="noopener">LC filter calculator</a></li>
+                                <li><a href="https://www.ariat-tech.com/blog/comprehensive-overview-of-voltage-and-current.html"
+                                        target="_blank" rel="noopener">Voltage and Current Explained</a></li>
+                                <li><a href="https://www.etechnophiles.com/types-of-capacitors/" target="_blank"
+                                        rel="noopener">25 Types of Capacitors &amp; their Uses</a></li>
+                                <li><a href="https://www.hackatronic.com/linear-regulated-power-supply-block-diagram-circuit-diagram/"
+                                        target="_blank" rel="noopener">Linear Regulated Power Supply Block Diagram
+                                        &amp; Circuit Diagram</a></li>
+                                <li><a href="https://www.circuitbasics.com/linear-power-supplies/" target="_blank"
+                                        rel="noopener">How to Build a Linear Power Supply</a></li>
+                                <li><a href="https://mcitransformer.com/power-supply-basics-part-1-unregulated-linear-regulated-linear/"
+                                        target="_blank" rel="noopener">Power Supply Basics – Part 1: Unregulated
+                                        Linear and Regulated Linear</a></li>
+                                <li><a href="https://uk.farnell.com/the-role-of-power-management-in-electronic-devices"
+                                        target="_blank" rel="noopener">The role of power management in today's
+                                        electronic devices</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Linear_regulator" target="_blank"
+                                        rel="noopener">Linear regulator – Wikipedia</a></li>
+                                <li><a href="https://resources.altium.com/p/isolated-vs-non-isolated-power-supplies-right-choice-without-fail"
+                                        target="_blank" rel="noopener">Isolated vs Non-Isolated Power Supplies:
+                                        The Right Choice Without Fail</a></li>
+                                <li><a href="https://www.mdpi.com/1996-1073/16/9/3894" target="_blank"
+                                        rel="noopener">Gallium Nitride Power Devices in Power Electronics
+                                        Applications</a></li>
+                                <li><a href="https://www.ti.com/lit/an/slyt756/slyt756.pdf?ts=1774571562348"
+                                        target="_blank" rel="noopener">Using a high-frequency switching regulator
+                                        without a linear regulator (TI)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=F2dCS5qOE8A" target="_blank"
+                                        rel="noopener">How mobile phone charger works? | SMPS Switch mode power
+                                        supply (YouTube)</a></li>
+                                <li><a href="https://passive-components.eu/modular-ac-line-emi-filters-explained/"
+                                        target="_blank" rel="noopener">Modular AC line EMI filters explained</a>
+                                </li>
+                                <li><a href="https://www.voltagelab.com/bridge-rectifier-with-capacitor-filter/"
+                                        target="_blank" rel="noopener">Bridge Rectifier With Capacitor Filter:
+                                        Circuit Diagram and Explain Step by Step</a></li>
+                                <li><a href="https://www.utmel.com/blog/categories/resistor/understanding-of-carbon-film-resistors"
+                                        target="_blank" rel="noopener">Understanding of Carbon Film Resistors</a>
+                                </li>
+                                <li><a href="https://www.te.com/en/products/passive-components/resistors/intersection/resistor-color-codes.html"
+                                        target="_blank" rel="noopener">Resistor Color Codes: What Do the Color
+                                        Bands Mean?</a></li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <a class="back-link" href="#basic-electrical-components">▴ Back to Table of Contents</a>
+                </section>
+
+                <!-- ═══════════ FINAL REFERENCE SECTION ═══════════ -->
+                <section class="refs" id="references">
+                    <h2>📚 All References (combined)</h2>
+                    <p class="small">See the individual reference subsections above for categorized links:</p>
+                    <ul>
+                        <li><a href="#es-5">Electrical Safety References</a></li>
+                        <li><a href="#comp-refs">Basic Electrical Components References</a></li>
+                    </ul>
+                </section>
+
+            </main>
+        </div>
     </div>
-
-    <!-- Footer -->
-    <footer style="text-align: center; padding: 40px; color: var(--muted); font-size: 0.9rem;">
-      <p>© 2026 Personal Study Logbook. Educational purpose only.</p>
-    </footer>
-  </div>
-
 </body>
 </html>
