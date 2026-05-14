@@ -3,9 +3,11 @@
 <img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner 3.png" style="max-width: 100; height: auto;" width="256" />
 
 # Personal studylogbook of electronic fundamentals
-🌐Language: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md) <br>
+
 ---
 [**→Click here for the best reading experience←**](https://r2s-ver.github.io/Study-Electronics-Fundamentals/) <br>
+---
+🌐Language: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md) <br>
 
 Welcome to my learning repository! 
 This project documents my self-study journey in the world of electricity and hardware. I am starting from the very basics of electrical safety and slowly diving into component-level circuit design. 
