@@ -196,8 +196,8 @@
 
 ## 🟪电压与电流
 </summary>
-    <details><summary>
-            
+<details><summary> 
+                
 ### 🟦1.宏观解释
 </summary>
 
@@ -207,8 +207,8 @@
 * **电阻 (R)：** 相当于**水管的粗细**。水管越细，对水流的阻力就越大。
 
 > **欧姆定律 (Ohm's Law):** $V = I \times R$
-   </details>
-    <details><summary>
+</details>
+<details><summary>
 
 ### 🟦2.微观本质
 </summary>
@@ -229,8 +229,8 @@
 $$V = \int_{A}^{B} \vec{E} \cdot d\vec{l}$$
 
 所以，电压并不是什么无形的气体压力，而是**电场对电荷的一种“无形推力”的空间累积**。
-   </details>
-    <details><summary>
+</details>
+<details><summary>
     
 ### 🟦3. 基尔霍夫定律
 </summary>
@@ -249,7 +249,7 @@ $$V = \int_{A}^{B} \vec{E} \cdot d\vec{l}$$
 $$\oint \vec{E} \cdot d\vec{l} = 0$$
 
 * **能量守恒类比：** 电源像一台“电荷电梯”，消耗化学能把电子从低电势搬运到高电势（获得了电势能）；当电子流经电阻时，它在电梯里获得的电势能通过与原子晶格的碰撞，全部转化为了**热能**或**光能**。当它回到电池负极时，能量刚好耗尽。能量不会凭空产生，也不会凭空消失，这就是 KVL 的终极真相。
-   </details>
+</details>
 </summary> </details> 
 
 #### [>返回目录<](#Table-of-Contents)
