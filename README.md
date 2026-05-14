@@ -21,8 +21,8 @@
   1\. [简介与项目范围](#1-简介与项目范围) <br>
   2\. [家庭电气系统中的保护机制](#2-家庭电气系统中的保护机制) <br>
   3\. [家庭用电的潜在风险](#3-家庭用电的潜在风险) <br>
-  4\. [实践研究](#实践研究) <br>
-  5\. [参考资料](#电气参考资料) <br>
+  4\. [实践研究](#4-实践研究) <br>
+  5\. [参考资料](#5-电气参考资料) <br>
 - [电压与电流 (Voltage and current)](#voltage-and-current) <br>
   1\. 基尔霍夫电流与电压定律 (Kirchhoff’s Current and Voltage Law) <br>
 - [基础电子元器件 (Basic electrical components)](#basic-electrical-components) <br>
