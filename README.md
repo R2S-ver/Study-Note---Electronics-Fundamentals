@@ -4,7 +4,6 @@
 
 # Personal studylogbook of electronic fundamentals
 
----
 [**→Click here for the best reading experience←**](https://r2s-ver.github.io/Study-Electronics-Fundamentals/) <br>
 ---
 🌐Language: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md) <br>
