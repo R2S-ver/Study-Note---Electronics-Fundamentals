@@ -292,22 +292,37 @@ An LED(Light-emitting diode) cannot be treated as a fixed ohmic resistor because
         
 ### 🟦Transistor
 </summary>
-        content 1.1
+        uPCOMING
 </details>
      <details><summary>
         
 ### 🟦Mosfet
 </summary>
-        content 1.1
+        UPCOMING
 </details>
      <details><summary>
         
 ### 🟦Linear and Switching Power Supply
 </summary>
-        content 1.1
+
+<img alt="31" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/31.png" width="1024" height="1024" /> <br>
+
+#### Pracical electrical schematic case - 230V - 12V Switching Power Supply 
+<img alt="32" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/32.png" width="1024" height="1024" /> <br>
+<img alt="33" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/33.png" width="1024" height="1024" /> <br>
+<img alt="34" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/34.png" width="1024" height="1024" /> <br>
+
 </details>
     <details><summary>
-  
+      
+### 🟦Skills
+</summary>
+<img alt="35" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/35.png" width="1024" height="1024" /> <br>
+</details>
+     <details><summary>
+
+
+      
 ### 🟦Refs Components
 </summary>
 
