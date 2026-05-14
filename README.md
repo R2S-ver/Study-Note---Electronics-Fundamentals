@@ -25,7 +25,7 @@
   5\. [参考资料](#5-电气参考资料) <br>
 - [电压与电流 (Voltage and current)](#电压与电流) <br>
   1\. [简单解释](#1-宏观解释) <br>
-  2\. [进阶解释](#2-微观本质) <br>
+  2\. [进阶解释](#2-微观本质) <br>
   3\. [基尔霍夫电流与电压定律 (Kirchhoff’s Current and Voltage Law)](#3-基尔霍夫定律) <br>
 - [基础电子元器件 (Basic electrical components)](#基础电子元器件) <br>
   1\. [电阻器 (Resistor)](#1-电阻器) <br>
