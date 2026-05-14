@@ -1,7 +1,7 @@
 <div align="center">
 
-<img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner 2.png" style="width: auto; height: auto;" />
-  
+<img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner 2.png" style="max-width: 100%; height: auto;" />
+
 # Personal studylogbook of electronic fundamentals
 🌐Language: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
 
