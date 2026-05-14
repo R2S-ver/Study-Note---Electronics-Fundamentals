@@ -40,7 +40,8 @@ To better internalize these concepts and understand their practical applications
   6\. [Mosfet](#Mosfet) <br>
   7\. [Linear and Switching Power Supply](#Linear-and-Switching-Power-Supply) <br>
      &nbsp;&nbsp; 7.1\. SMPS analysis <br>
-  8\. [References](#refs-components) <br>
+  8\. [Practical skills](#practical-skills) <br>
+  9\. [References](#refs-components) <br>
 ----------------------------
 
 <!-- 开始折叠内容 -->
@@ -315,14 +316,12 @@ An LED(Light-emitting diode) cannot be treated as a fixed ohmic resistor because
 </details>
     <details><summary>
       
-### 🟦Skills
+### 🟦Practical skills
 </summary>
 <img alt="35" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/35.png" width="1024" height="1024" /> <br>
 </details>
      <details><summary>
 
-
-      
 ### 🟦Refs Components
 </summary>
 
