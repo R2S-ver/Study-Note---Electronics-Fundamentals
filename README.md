@@ -192,7 +192,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 ## 🟪Voltage and Current
 </summary>
 
-<details id="1-macroscopic-explanation"><summary> 
+<details id="simple-explaination"><summary> 
                  
 ### 🟦1. Simple Explaination
 </summary>
@@ -205,7 +205,7 @@ To build an intuitive understanding, let's use a water pipe analogy:
 > **Ohm's Law:** $V = I \times R$
 </details>
 
-<details id="2-microscopic-essence"><summary>
+<details id="2-complex-explaination"><summary>
 
 ### 🟦2. Complex Explaination
 </summary>
