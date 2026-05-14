@@ -124,7 +124,7 @@
 * **缺乏电涌保护：** 容易受到电压尖峰的损害 (Overspanningsbeveiliging)。
     </details>
     <details><summary>
-### 🟦4. 实践研究 (Practical research)
+### 🟦4. 实践研究
 </summary>
 
 <img alt="8" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/8.png" width="1024" height="1024" /> <br>
@@ -161,7 +161,7 @@
 #### [>返回目录<](#Table-of-Contents)
 </details>
 <details><summary>
-  
+
 ### 🟦5. 电气参考资料
 </summary>
 
