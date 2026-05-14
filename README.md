@@ -63,6 +63,7 @@
 - 设计安全、可靠且可行的节能方案。
     </details>
     <details><summary>
+
 ### 🟦2. 家庭电气系统中的保护机制
 </summary>
 
@@ -87,6 +88,7 @@
 <img alt="3" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/3.png" width="512" height="512" /> <br>
     </details>
     <details><summary>
+
 ### 🟦3. 家庭用电的潜在风险
 </summary>
 
