@@ -192,7 +192,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 ## 🟪Voltage and Current
 </summary>
 
-<details id="simple-explaination"><summary> 
+<details id="1-simple-explaination"><summary> 
                  
 ### 🟦1. Simple Explaination
 </summary>
