@@ -16,7 +16,7 @@
 
 </div>
 
-# **目录 (Table of Contents)**
+# **目录**
 - [家庭用电安全](#electrical-safety) <br>
   1\. [简介与项目范围](#1-简介与项目范围) <br>
   2\. [家庭电气系统中的保护机制](#2-家庭电气系统中的保护机制) <br>
@@ -192,7 +192,7 @@
 <!-- 开始折叠内容 -->
 <details> <summary> 
 
-## 🟪电压与电流 (Voltage and Current)
+## 🟪电压与电流
 </summary>
 
 <img alt="电压电流类比" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/voltage_current_analogy.png" width="1080" /> <br>
