@@ -247,7 +247,11 @@ R = 2V / 0.0135A = 148.15 ohms (**150 ohm resistor**)
 ##### LED as Resistance?
 An LED(Light-emitting diode) cannot be treated as a fixed ohmic resistor because it is a non-linear component. While a standard resistor follows Ohm's law (where current is directly proportional to voltage), an LED is a diode with a non-linear current-voltage curve.
 
-##### Conclusion
+#### Pracical electrical schematic case - Voltage Comparator
+<img alt="23" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/23.png" width="1024" height="1024" /> <br>
+<img alt="22" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/22.png" width="1024" height="1024" /> <br>
+
+#### Conclusion
 <img alt="20" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/20.png" width="1024" height="1024" /> <br>
 
 </details>
@@ -255,19 +259,34 @@ An LED(Light-emitting diode) cannot be treated as a fixed ohmic resistor because
   
 ### 🟦Capacitor
 </summary>
-        content 1.2
+
+<img alt="27" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/27.png" width="1024" height="1024" /> <br>
+<img alt="28" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/28.png" width="1024" height="1024" /> <br>
+
 </details>
      <details><summary>
       
 ### 🟦Conductor
 </summary>
-        content 1.2
+
+<img alt="29" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/29.png" width="1024" height="1024" /> <br>
+
+  #### Pracical electrical schematic case - Rectifier Bridge
+  <img alt="24" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/24.png" width="1024" height="1024" /> <br>
+  <img alt="25" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/25.png" width="1024" height="1024" /> <br>
+  
 </details>
      <details><summary>
         
 ### 🟦Diode
 </summary>
-        content 1.1
+
+<img alt="30" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/30.png" width="1024" height="1024" /> <br>
+
+  #### Pracical electrical schematic case - Rectifier Bridge
+  
+<img alt="26" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/26.png" width="1024" height="1024" /> <br>
+
 </details>
      <details><summary>
         
