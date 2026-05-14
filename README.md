@@ -192,7 +192,7 @@
 
 
 <!-- 开始折叠内容 -->
-<details> <summary> 
+<details open> <summary> 
 
 ## 🟪电压与电流
 </summary>
