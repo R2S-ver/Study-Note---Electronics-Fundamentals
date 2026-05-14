@@ -44,7 +44,7 @@
 
 <!-- 开始折叠内容 -->
 <details open><summary>
-  
+
 ## 🟪电气安全 (Electrical safety)
 </summary>
     <details><summary>
@@ -124,6 +124,7 @@
 * **缺乏电涌保护：** 容易受到电压尖峰的损害 (Overspanningsbeveiliging)。
     </details>
     <details><summary>
+
 ### 🟦4. 实践研究
 </summary>
 
@@ -131,6 +132,7 @@
 在这项研究中，我正在对工作场所的电气基础设施进行调研，重点关注安全性和运行可靠性。
 基于这一分析，我绘制了该工作空间的详细拓扑图。
 本项目的核心目标是理解电气拓扑结构的绘制并进行风险评估。为了确保清晰度——尤其是由于许多专业工具缺乏标准化的电气符号；我使用图标来提高辨识度。
+
 #### 🟩潜在风险与优化计划
 <img alt="9" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/9.png" width="768" height="768" /> <br>
 **4.1. 电焊机接地 (Welding Machine Grounding)** 目前的电焊机未接地。这构成了重大的安全风险，必须将其直接连接到配电箱 (meterkast) 的主接地系统。<br>
