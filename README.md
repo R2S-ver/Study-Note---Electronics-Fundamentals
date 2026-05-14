@@ -3,6 +3,7 @@
 <img alt="LOGO" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/Banner 2.png" width="256" height="256"/>
   
 # 电子基础知识个人学习日志
+
 其他语言: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
 
 > **注：** 本教程中提供的配图均为英文，因为原版是用英文编写的，在此保留原图暂未做汉化处理。
