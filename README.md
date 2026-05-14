@@ -25,8 +25,8 @@ To better internalize these concepts and understand their practical applications
   4\. [Practical Research](#practical-research) <br>
   5\. [References](#refs-electrical) <br>
 - [Voltage and current](#voltage-and-current) <br>
-  1\. [Macroscopic Explanation](#1-macroscopic-explanation) <br>
-  2\. [Microscopic Essence](#2-microscopic-essence) <br>
+  1\. [Simple Explanation](#1-simple-explanation) <br>
+  2\. [Complex Explanation](#2-complex-explanation) <br>
   3\. [Kirchhoff’s Laws](#3-kirchhoffs-laws) <br>
 - [Basic electrical components](#basic-electrical-components) <br>
   1\. [Resistor](#Resistor) <br>
@@ -194,7 +194,7 @@ To mitigate the risks identified in my research, I have implemented a physical s
 
 <details id="1-macroscopic-explanation"><summary> 
                  
-### 🟦1. Macroscopic Explanation
+### 🟦1. Simple Explaination
 </summary>
 
 To build an intuitive understanding, let's use a water pipe analogy:
@@ -207,7 +207,7 @@ To build an intuitive understanding, let's use a water pipe analogy:
 
 <details id="2-microscopic-essence"><summary>
 
-### 🟦2. Microscopic Essence
+### 🟦2. Complex Explaination
 </summary>
 
 When we flip a switch, the light bulb turns on instantly. Do electrons rush from the battery to the bulb at the speed of light? **Not at all.**
