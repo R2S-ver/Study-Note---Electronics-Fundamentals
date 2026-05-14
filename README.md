@@ -4,7 +4,7 @@
   
 # 电子基础知识个人学习日志  <br>
 
-其他语言: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
+🌐其他语言: [English](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/README.md) | [中文](https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/Chinese/README.md)
 
 > **注：** 本记录中提供的配图均为英文，因为原版是用英文编写的，在此保留原图暂未做汉化处理。如果你有哪张图不懂可以QQ联系我，我讲解给你听。
 
