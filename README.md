@@ -198,7 +198,7 @@
 <img alt="电压电流类比" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/voltage_current_analogy.png" width="1080" /> <br>
 
 ### 🟦1. 宏观现象：水管类比（快速入门）
-为了建立直观印象，我们首先使用**水管类比法**：
+为了建立直观印象，这里使用水管来类比：
 * **电压 (V)：** 相当于**水压**。它是推动电荷流过电路的势能差。
 * **电流 (I)：** 相当于**水流速度（流量）**。它是电荷在导体中的实际移动。
 * **电阻 (R)：** 相当于**水管的粗细**。水管越细，对水流的阻力就越大。
