@@ -191,8 +191,47 @@
 
 <!-- 开始折叠内容 -->
 ## 🟪电压与电流 (Voltage and Current)
-<details> 
-<summary> 点击此处展开 (Click here to expand) </summary> 
+<details> <summary> 
+
+## 🟪电压与电流 (Voltage and Current)
+</summary>
+
+<img alt="电压电流类比" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/voltage_current_analogy.png" width="800" /> <br>
+
+### 🟦1. 基础概念：压力与流量
+为了理解电力，我们可以使用**水管类比法**：
+* **电压 (V) - 单位: 伏特 [V]：** 可以理解为**水压**。它是推动电荷流过电路的势能差。
+* **电流 (I) - 单位: 安培 [A]：** 可以理解为**水流速度**。它是电荷（电子）在导体中的实际移动。
+* **电阻 (R) - 单位: 欧姆 [Ω]：** 可以理解为**水管的大小**。水管越细，对水流的阻力就越大。
+
+> **欧姆定律 (Ohm's Law):** $V = I \times R$
+
+---
+
+### 🟦2. 基尔霍夫定律 (Kirchhoff’s Laws)
+这两条定律是电路分析的基石，确保了能量和电荷的守恒。
+
+#### 🟩2.1. 基尔霍夫电流定律 (KCL) - 电荷守恒
+KCL 指出，对于电路中的任何节点（交汇点），流入该节点的电流之和等于流出该节点的电流之和。
+* **核心公式：** $\sum I_{in} = \sum I_{out}$
+* **类比：** 如果一根水管分叉成两根，进入分叉处的总水量必须等于从两个分叉流出的总水量之和。
+
+#### 🟩2.2. 基尔霍夫电压定律 (KVL) - 能量守恒
+KVL 指出，沿着电路中任何闭合回路的电势差（电压）的方向累加，其总和等于零。
+* **核心公式：** $\sum V_{电源} = \sum V_{电压降}$  或  $\sum V = 0$
+* **类比：** 如果你爬上一座山（电压源），然后绕一圈回到起点（经过电阻/元件下降），你的总高度变化为零。
+
+---
+
+### 🟦3. 实际案例：串并联电路
+<img alt="KCL-KVL案例" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/kcl_kvl_circuit.png" width="600" /> <br>
+
+**场景分析：** 一个 12V 电池连接一个 100Ω 的电阻 ($R_1$)，后面跟着两个并联的 200Ω 电阻 ($R_2, R_3$)。
+1.  **应用 KVL：** $R_1$ 两端的电压降加上并联部分两端的电压降必须等于 12V。
+2.  **应用 KCL：** 流出 $R_1$ 的总电流将平均分配到 $R_2$ 和 $R_3$ 中（因为它们的阻值相等）。
+
+
+</summary> 
 
 </details> 
 
