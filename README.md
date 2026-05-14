@@ -18,10 +18,10 @@
 
 # **目录 (Table of Contents)**
 - [家庭用电安全](#electrical-safety) <br>
-  1\. [简介与项目范围](#1-introduction--project-scope) <br>
-  2\. [家庭电气系统中的保护机制](#2-protective-mechanisms-in-the-household-electrical-system) <br>
-  3\. [家庭用电的潜在风险](#3-potential-risks-in-household-power-usage) <br>
-  4\. [实践研究](#practical-research) <br>
+  1\. [简介与项目范围](#1-简介与项目范围) <br>
+  2\. [家庭电气系统中的保护机制](#2-家庭电气系统中的保护机制) <br>
+  3\. [家庭用电的潜在风险](#3-家庭用电的潜在风险) <br>
+  4\. [实践研究](#实践研究) <br>
   5\. [参考资料](#电气参考资料) <br>
 - [电压与电流 (Voltage and current)](#voltage-and-current) <br>
   1\. 基尔霍夫电流与电压定律 (Kirchhoff’s Current and Voltage Law) <br>
@@ -48,8 +48,8 @@
 ## 🟪电气安全 (Electrical safety)
 </summary>
     <details><summary>
-      
-### 🟦1. 简介与项目范围 (Introduction & Project Scope)
+
+### 🟦1. 简介与项目范围
 </summary>
 <img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" width="512" height="512" /> <br>
 本节重点关注家庭用电安全，具体来说是我的个人工作空间（卧室）以及其中使用的设备。<br>
@@ -61,7 +61,7 @@
 - 设计安全、可靠且可行的节能方案。
     </details>
     <details><summary>
-### 🟦2. 家庭电气系统中的保护机制 (Protective Mechanisms)
+### 🟦2. 家庭电气系统中的保护机制
 </summary>
 
 在荷兰的家庭中，配电箱 (groepenkast) 位于电表柜中。其结构必须符合 **NEN 1010** 安全法规。
@@ -78,14 +78,14 @@
 * **2P / 1P+N 断路器：** 同时切断**两根**导线（火线和零线）。 
 * **为什么完全隔离很重要？** 使用 1P 断路器时，零线仍保持连接。在发生故障或接线错误的情况下，设备可能仍带有电压。2P 断路器可确保完全的电气隔离，断电更安全。
 <img alt="4" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/4.png" width="512" height="512" /> <br>
-#### 🟩脱扣特性 (Trip Characteristics)
+#### 🟩脱扣特性
 断路器通过自动断开来防止过载和短路。脱扣特性决定了断路器对电流尖峰（例如，在打开设备时）的反应速度。
 * 常见类型：**B、C、D、K、Z 和 MA**。
 * 区别在于断路器磁脱扣的电流值不同，通常表示为额定电流 (In) 的倍数。（例如，C 曲线更适合具有较高浪涌电流的设备）。 <br>
 <img alt="3" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/3.png" width="512" height="512" /> <br>
     </details>
     <details><summary>
-### 🟦3. 家庭用电的潜在风险 (Potential Risks)
+### 🟦3. 家庭用电的潜在风险
 </summary>
 
 <img alt="5" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/5.png" width="512" height="512" /> <br>
@@ -101,14 +101,14 @@
 3.1.5. **电缆密度：** 挤在同一个管道中的电缆数量（导致热量积聚）。<br>
 3.1.6. **短路电流：** 承受短路时产生的高温的能力。<br>
 <img alt="7" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/7.png" width="512" height="512" /> <br>
-#### 🟩3.2. 线缆缺陷 (Cord Defects)
+#### 🟩3.2. 线缆缺陷
 损坏的电缆可能导致短路、触电或火灾。
 * 外护套损坏。
 * 因过热导致的颜色改变。
 * 过度弯曲或挤压。
 * 绝缘材料老化/变脆。
 
-#### 🟩3.3. 运行环境 (Operating Environment)
+#### 🟩3.3. 运行环境
 在潮湿环境中需要格外小心。
 * 设备是否正确接地？
 * IP 防护等级是否符合该区域的标准？
