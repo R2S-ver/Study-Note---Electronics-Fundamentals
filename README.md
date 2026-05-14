@@ -53,7 +53,7 @@ To better internalize these concepts and understand their practical applications
       
 ### 🟦1. Introduction & Project Scope
 </summary>
-<img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" width="512" height="512" /> <br>
+<img alt="1" src="https://github.com/R2S-ver/Study-Electronics-Fundamentals/blob/main/assets/images/1.png" style="max-width: 100%; height: auto;" /> <br>
 This section focuses on electrical safety at home, specifically in my personal workspace (my bedroom) and the equipment used within it. <br>
 
 **Goals of this study:**
