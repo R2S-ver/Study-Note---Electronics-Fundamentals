@@ -25,8 +25,8 @@ To better internalize these concepts and understand their practical applications
   4\. [Practical Research](#practical-research) <br>
   5\. [References](#refs-electrical) <br>
 - [Voltage and current](#voltage-and-current) <br>
-  1\. [Simple Explanation](#1-simple-explanation) <br>
-  2\. [Complex Explanation](#2-complex-explanation) <br>
+  1\. [Simple Explaination](#1-simple-explaination) <br>
+  2\. [Complex Explaination](#2-complex-explaination) <br>
   3\. [Kirchhoff’s Laws](#3-kirchhoffs-laws) <br>
 - [Basic electrical components](#basic-electrical-components) <br>
   1\. [Resistor](#Resistor) <br>
