@@ -13,7 +13,7 @@ To better internalize these concepts and understand their practical applications
 
 *The images used in this repository are for educational and self-study purposes only. If you are the copyright owner of any image used here and would like it removed, please contact me.*
 
-> > **⚠️ Note on Regional Standards & AI Optimization:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your local regulations when working with electricity. *Additionally, to ensure the precision of technical phrasing and professional terminology, AI assistance was utilized to optimize and refine this documentation.*
+>  **⚠️ Note on Regional Standards & AI Optimization:** The electrical safety analysis and examples documented here are based on my local usage scenario in **The Netherlands (Europe)**. Voltage standards, electrical panel structures, protective mechanisms and safety regulations (like NEN 1010) vary significantly by country. Be aware of your local regulations when working with electricity. *Additionally, to ensure the precision of technical phrasing and professional terminology, AI assistance was utilized to optimize and refine this documentation.*
 
 </div>
 
